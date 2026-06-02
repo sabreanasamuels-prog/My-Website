@@ -513,65 +513,45 @@
     margin-bottom: 1rem;
   }
 
-  /* AFFILIATE BLOCK */
-  .affiliate-block {
-    margin: 1.5rem 0;
-    border: 1px solid var(--stone);
-    background: var(--accent-light);
-    padding: 1.5rem;
+  .affiliate-link-wrap {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .affiliate-label {
-    font-size: 0.68rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 500;
-  }
-
-  .affiliate-input {
-    display: flex;
-    gap: 0.75rem;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0 1.5rem;
   }
 
-  .affiliate-url {
-    flex: 1;
-    min-width: 200px;
-    padding: 0.55rem 0.85rem;
-    border: 1px solid var(--taupe);
-    background: var(--warm-white);
+  .affiliate-link-wrap::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--taupe);
+    flex-shrink: 0;
+  }
+
+  .affiliate-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     font-family: var(--sans);
     font-size: 0.82rem;
-    color: var(--charcoal);
-    outline: none;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+    padding-bottom: 1px;
   }
 
-  .affiliate-url:focus { border-color: var(--accent); }
-
-  .affiliate-copy-btn {
-    padding: 0.55rem 1.1rem;
-    background: var(--ink);
-    color: var(--cream);
-    border: none;
-    font-family: var(--sans);
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    cursor: pointer;
-    transition: background 0.2s;
-    text-transform: uppercase;
+  .affiliate-link:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
   }
 
-  .affiliate-copy-btn:hover { background: var(--accent); }
-
-  .affiliate-note {
-    font-size: 0.75rem;
-    color: var(--warm-gray);
-    font-style: italic;
+  .affiliate-link svg {
+    flex-shrink: 0;
+    opacity: 0.7;
   }
 
   /* ITEM NUMBER */
@@ -865,181 +845,151 @@
       <div class="item-number">01</div>
       <h3>A Twin Z Pillow (or similar twin nursing pillow)</h3>
       <p>This was the single item I would tell every expectant twin mum to buy first. The ability to tandem feed — whether breast or bottle — is a game-changer in those early weeks when you're feeding every two to three hours. Get one before the babies arrive so you're not desperately one-handing an Amazon order at 3am.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Twin Nursing Pillow</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Replace the placeholder above with your Amazon Associates link for this product. The link will display inline for readers.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4fQPRDm" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Nursing Pillow on Amazon
+        </a>
       </div>
 
       <div class="item-number">02</div>
       <h3>A Bouncy Chair — Two of Them</h3>
       <p>You will need somewhere to safely put one baby while you deal with the other. Two bouncy chairs (or one bouncer and one swing) give you that freedom. Get ones that can be operated with your foot — your hands will almost always be full.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Bouncy Chair</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your Amazon Associates link for your recommended bouncy chair here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uXdz5q" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Bouncy Chair on Amazon
+        </a>
       </div>
 
       <div class="item-number">03</div>
       <h3>A Side-by-Side Crib or Twin Next-to-Me</h3>
       <p>Whether your twins sleep together (co-bedding) or separately is a personal choice, but having them close to your bed in the early weeks makes night feeds considerably less miserable. Many twin parents swear by co-bedding in the first few months, as the closeness can actually help them both settle.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Twin Crib / Next-to-Me</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your affiliate link for a co-sleeping crib or next-to-me product here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4dUgYL7" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Crib / Next-to-Me on Amazon
+        </a>
       </div>
 
       <div class="item-number">04</div>
       <h3>Muslin Cloths — An Embarrassing Number of Them</h3>
       <p>Buy more than you think you need, then double it. Muslins are the unsung hero of twin newborn life. We use them for everything: burp cloths, sun shades, makeshift changing mats, light swaddles. We go through six to eight a day minimum. Stock up.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Muslin Cloths</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your favourite muslin multi-pack here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uM8I7n" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Muslin Cloths on Amazon
+        </a>
       </div>
 
       <div class="item-number">05</div>
       <h3>A Formula Prep Machine (if bottle feeding)</h3>
       <p>If you're formula feeding or combination feeding, a prep machine is non-negotiable with twins. Preparing two bottles in the middle of the night while two babies are screaming is genuinely impossible without one. The time saving alone makes it worth every penny.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Formula Prep Machine</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your Amazon link for your recommended formula prep machine.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4o35tpx" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Formula Prep Machine on Amazon
+        </a>
       </div>
 
       <div class="item-number">06</div>
       <h3>A White Noise Machine</h3>
       <p>Or two. White noise saved our sanity. When one twin wakes and starts crying, the white noise helps mask the sound from the other. It's also fantastic for helping them settle to sleep in those first few weeks when they've been used to the constant whooshing sounds of the womb.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — White Noise Machine</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your preferred white noise machine or soother here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4onOfn3" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View White Noise Machine on Amazon
+        </a>
       </div>
 
       <div class="item-number">07</div>
       <h3>A Baby Monitor with Split Screen</h3>
       <p>Once the babies move to their own room, you'll want to see both of them at once without switching back and forth. A dual-camera monitor that displays both feeds simultaneously is absolutely worth the investment. You'll thank yourself at 2am.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Twin Baby Monitor</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your recommended split-screen or dual-camera monitor.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3RIRTvo" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Baby Monitor on Amazon
+        </a>
       </div>
 
       <div class="item-number">08</div>
       <h3>Zip-Up Sleepsuits (and lots of them)</h3>
       <p>Anything with poppers is your enemy in the newborn stage. Zip-up sleepsuits in 0-3 months and 3-6 months, in quantity. You'll be changing two babies multiple times a day and night, and fumbling with poppers while sleep-deprived is its own special kind of torture. Zip-ups only.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Zip-Up Sleepsuits</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your favourite zip-up sleepsuit multi-packs here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/49CwQRn" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Zip-Up Sleepsuits on Amazon
+        </a>
       </div>
 
       <div class="item-number">09</div>
       <h3>A Hands-Free Pumping Bra (if breastfeeding)</h3>
       <p>If you're breastfeeding or expressing for twins, your time is even more precious than for singleton parents. A hands-free pumping bra means you can express while eating, scrolling, or sleeping in a chair (genuinely, this happens). It sounds like a small thing. It is not a small thing.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Hands-Free Pumping Bra</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your affiliate link for a pumping bra here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uGSaxm" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Hands-Free Pumping Bra on Amazon
+        </a>
       </div>
 
       <div class="item-number">10</div>
       <h3>A Tall Changing Station with Storage</h3>
       <p>You will spend more time at a changing table than you ever imagined possible. Get one at a proper height so you're not ruining your back. Built-in storage for nappies, wipes, and creams for both babies means you never have to walk away mid-change. That is a safety essential, not just a convenience.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Changing Station</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your recommended changing unit or station here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4dLgvMv" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Changing Station on Amazon
+        </a>
       </div>
 
       <div class="item-number">11</div>
       <h3>A Wrap Carrier or Twin Carrier</h3>
       <p>There will be moments when you need two hands and both babies need contact. A stretchy wrap or a twin carrier is worth learning before the babies arrive so it feels natural when you desperately need it. Many twin mums use one carrier and alternate, or invest in two individual carriers for those particularly demanding days.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Baby Carrier / Wrap</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your affiliate link for your recommended carrier or wrap here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4fWrHHB" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Baby Carrier / Wrap on Amazon
+        </a>
       </div>
 
       <div class="item-number">12</div>
       <h3>A Nappy Bin with Odour Control</h3>
       <p>You are producing approximately double the nappies of a singleton parent. A good nappy bin with genuine odour control is not optional. You'll be emptying it frequently regardless, but at least your nursery won't smell like a motorway service station.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Nappy Bin</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to your recommended nappy bin here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wZCJSt" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Nappy Bin on Amazon
+        </a>
       </div>
 
       <div class="item-number">13</div>
       <h3>Baby Bath with Support Insert — or a Bath Seat for Two</h3>
       <p>Bathing twins solo is genuinely one of the most nerve-wracking parts of early twin parenting. An ergonomic baby bath with a built-in support insert means you can safely wash one while the other waits in their own supported seat. Bath time will eventually become your favourite part of the day — honest.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Baby Bath / Bath Seat</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your affiliate link for a baby bath or support seat here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/43f5flx" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Baby Bath / Bath Seat on Amazon
+        </a>
       </div>
 
       <div class="item-number">14</div>
       <h3>A Feeding & Sleep Tracker App (or simple notebook)</h3>
       <p>When you're running on two hours of broken sleep, you will have absolutely no idea which baby last fed, how long ago, or from which side. A tracking app or a simple logbook for both babies is essential — not optional. Many twin parents use a whiteboard on the fridge in those early weeks. Whatever works, use it.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Tracking Notebook / Whiteboard</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to a feeding tracker, baby logbook, or similar product.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://huckleberrycare.com/product/premium?utm_source=google_ads&utm_campaign=google_pmax_premiumLP&gad_source=1&gad_campaignid=23833315158&gbraid=0AAAAADNfyyYTF1j75o1u4bN8AgMHAVtUW&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxKEavt8_1Bp2HTXTTwEi3DxUjnOUP4xaH5U_bj0xA6T9OnGqyfcBykaAi3mEALw_wcB" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Feeding Tracker / Notebook on Amazon
+        </a>
       </div>
 
       <div class="item-number">15</div>
       <h3>Personalised Identity Bracelets or Ankle Tags</h3>
       <p>I say this with complete seriousness and zero shame: in the very early days, telling your identical twins apart can be genuinely difficult — especially when you're exhausted beyond all reason. Soft hospital-style identity bracelets or colour-coded ankle tags save you from that specific, slightly alarming moment of uncertainty. No judgement. Every twin parent has been there.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Baby Identity Bracelets / Tags</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to soft identity bracelets or colour-coded wristbands for twins.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3RXRh52" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Baby Identity Bracelets on Amazon
+        </a>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
@@ -1064,92 +1014,76 @@
       <p>Before you fall in love with a pram online, there are a few practical questions every UK twin parent needs to ask. Does it fit through a standard 760mm doorway? What's the folded size — will it fit in your car boot? Can it take two carrycots for the newborn stage? And critically: can you navigate it with one hand while holding a coffee?</p>
       <p>Width is the number one concern for most UK parents. British pavements and shop doorways are notoriously narrow, so the difference between a 75cm and an 82cm pram is genuinely significant in daily life.</p>
 
-      <h3>1. iCandy Orange 4 Twin</h3>
-      <p>Consistently one of the most-recommended twin prams among UK parents, the iCandy Orange 4 has earned its reputation. It accepts two carrycots from birth, converts to forward and rear-facing seats, and at 74cm wide sits at the more manageable end of the spectrum. The ride quality is exceptional and it handles UK pavements better than most of the competition. It is, however, a significant investment.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — iCandy Orange 4 Twin</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your Amazon Associates link for the iCandy Orange 4 Twin or accessories here.</span>
+      <h3>1. iCandy Peach 7 Twin</h3>
+      <p>Consistently one of the most-recommended twin prams among UK parents, the iCandy Peach 7 has earned its reputation. It accepts two carrycots from birth, converts to forward and rear-facing seats, and at 74cm wide sits at the more manageable end of the spectrum. The ride quality is exceptional and it handles UK pavements better than most of the competition. It is, however, a significant investment.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xcactd" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View iCandy Peach 7 Twin on Amazon
+        </a>
       </div>
 
       <h3>2. Bugaboo Donkey 5 Twin</h3>
       <p>The Bugaboo Donkey 5 Twin is the pram that looks impossibly stylish but also genuinely functions brilliantly. What sets it apart is that it can convert between twin, duo (one seat, one carrycot) and mono configurations — so it grows with your family if one baby needs a different seat style. At 74.5cm wide it's workable, and the fold is impressively compact for a twin pram. Build quality is outstanding and the accessories ecosystem is unmatched.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Bugaboo Donkey 5 Twin</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to the Bugaboo Donkey 5 Twin or bundle here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3PCoWAH" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Bugaboo Donkey 5 Twin on Amazon
+        </a>
       </div>
 
       <h3>3. UPPAbaby Vista V3 Twin (with RumbleSeat)</h3>
       <p>The UPPAbaby Vista V3 is a titan of the pram world, and with the addition of a RumbleSeat it becomes a formidable twin option. The Vista was updated for 2026 with a refreshed frame and improved handlebar. Both seats face the parent or the world, and the storage basket beneath is legitimately enormous — a rare win for twin parents who need to carry everything. Slightly wider than the iCandy at 79cm, but the manoeuvrability is excellent.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — UPPAbaby Vista V3</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your affiliate link for the UPPAbaby Vista V3 twin configuration here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vho8jM" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View UPPAbaby Vista V3 on Amazon
+        </a>
       </div>
 
       <h3>4. Silver Cross Wave</h3>
       <p>The Silver Cross Wave is a beautifully British choice — and a genuinely excellent twin pram. It accepts two full-size carrycots from birth, has a height-adjustable handle, and at 75cm wide is on the reasonable end for UK use. The Wave's strength is in its versatility: it can be configured with two seats facing the same direction or opposite each other, and the ride quality on uneven British pavements is smooth and solid. Silver Cross customer service also gets consistently high marks, which matters when you're spending this much.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Silver Cross Wave</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to the Silver Cross Wave twin pram or bundle here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://www.kiddies-kingdom.com/2-in-1-travel-systems/37719-silver-cross-wave-pram-system-granite-2019.html?utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22858189618&gbraid=0AAAAAD38Dka1V-SV0s1rS0FRfjDeaLTG4&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxLcU3pIYSiKeyMQnHvKEFaQ1_wJSWI2Yut7YZT7tIrFlFmpy02ZTz4aAiQoEALw_wcB" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Silver Cross Wave on Amazon
+        </a>
       </div>
 
       <h3>5. Egg2 Twin</h3>
       <p>The Egg2 is a firm favourite in UK twin parenting communities for a reason. It's one of the narrowest full-featured twin prams available at 73cm, which makes it genuinely usable in tight spots. The seats are plush and comfortable for babies, the fabrics are beautiful, and it accepts two carrycots from birth. If width is your primary concern, the Egg2 Twin deserves serious consideration.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Egg2 Twin</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your Amazon affiliate link for the Egg2 Twin pram here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://www.babyandchildstore.com/shop/pushchairs/doubles-tandems/tandems-doubles-tandems/egg-3-tandem-set-mink/" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Egg2 Twin Pram on Amazon
+        </a>
       </div>
 
       <h3>6. Mountain Buggy Duet v4</h3>
       <p>If you're an active family, a runner, or you spend a lot of time on rough terrain, the Mountain Buggy Duet v4 is the answer. At 63cm it is genuinely one of the narrowest double prams ever made, and yet it still seats two full-size toddlers side by side. The tyres handle anything. It's not the most luxurious-looking pram, but for functionality in outdoor environments it is in a category of its own. An excellent budget-relative option too.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Mountain Buggy Duet v4</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to the Mountain Buggy Duet v4 here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uFl3tQ" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Mountain Buggy Duet v4 on Amazon
+        </a>
       </div>
 
       <h3>7. Joie Finiti (Budget Pick)</h3>
       <p>Not everyone can — or wants to — spend £1,500+ on a pram. The Joie Finiti is the twin pram recommendation for parents who need a solid, functional, and genuinely reliable double buggy without the eye-watering price tag. It's heavier and less aesthetically refined than the premium options, but it folds reasonably, the seats recline fully, and it handles everyday UK use well. Sometimes practical is all you need.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Joie Finiti Double Pram</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Add your Amazon affiliate link for the Joie Finiti or a similar budget double pram.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uNkkXu" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Joie Finiti Double Pram on Amazon
+        </a>
       </div>
 
       <h3>Essential Accessories to Add to Your Pram</h3>
       <p>Whichever pram you choose, there are a few accessories that are genuinely worth adding: a universal rain cover set (British weather being what it is), a parasol or two for those rare glorious summer days, a pram organiser for your phone, keys, and snacks, and a decent pram clip for your changing bag. These small additions make daily life considerably smoother.</p>
-      <div class="affiliate-block">
-        <span class="affiliate-label">🔗 Amazon Affiliate Link — Pram Accessories Bundle</span>
-        <div class="affiliate-input">
-          <input class="affiliate-url" type="url" placeholder="Paste your Amazon affiliate link here…" />
-          <button class="affiliate-copy-btn" onclick="copyAffiliateLink(this)">Copy</button>
-        </div>
-        <span class="affiliate-note">Link to a pram accessories kit, rain cover set, or organiser here.</span>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3PZyNk6" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Pram Accessories on Amazon
+        </a>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. Prices and availability correct at time of writing — always verify before purchasing. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
@@ -1167,18 +1101,6 @@
   function closeArticle(id) {
     document.getElementById('article-' + id).classList.remove('active');
     document.body.style.overflow = '';
-  }
-
-  function copyAffiliateLink(btn) {
-    const input = btn.previousElementSibling;
-    if (input.value.trim()) {
-      navigator.clipboard.writeText(input.value.trim()).then(() => {
-        btn.textContent = 'Copied!';
-        setTimeout(() => btn.textContent = 'Copy', 2000);
-      });
-    } else {
-      input.focus();
-    }
   }
 
   // Close article on Escape
