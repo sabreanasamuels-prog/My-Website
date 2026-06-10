@@ -813,13 +813,13 @@
         <p class="blog-card-excerpt">Navigating Britain's pavements, car boots, and coffee shop doors with a double pram is an art form. Here's everything you need to know before you buy.</p>
         <span class="blog-card-arrow">Read article →</span>
       </a>
+    </div>
      <a class="blog-card" onclick="openArticle('travel'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
   <span class="blog-card-tag">Travel · Summer 2026</span>
   <div class="blog-card-title">Top 10 Tips for Travelling with Twins This Summer</div>
   <p class="blog-card-excerpt">Airports, car journeys, sunshine and two babies — it sounds terrifying, but it really is doable. Here's everything I wish I'd known before our first trip as a family of four.</p>
   <span class="blog-card-arrow">Read article →</span>
 </a>
-    </div>
   </div>
 </section>
 
