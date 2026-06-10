@@ -813,6 +813,12 @@
         <p class="blog-card-excerpt">Navigating Britain's pavements, car boots, and coffee shop doors with a double pram is an art form. Here's everything you need to know before you buy.</p>
         <span class="blog-card-arrow">Read article →</span>
       </a>
+     <a class="blog-card" onclick="openArticle('travel'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+  <span class="blog-card-tag">Travel · Summer 2026</span>
+  <div class="blog-card-title">Top 10 Tips for Travelling with Twins This Summer</div>
+  <p class="blog-card-excerpt">Airports, car journeys, sunshine and two babies — it sounds terrifying, but it really is doable. Here's everything I wish I'd known before our first trip as a family of four.</p>
+  <span class="blog-card-arrow">Read article →</span>
+</a>
     </div>
   </div>
 </section>
@@ -1113,5 +1119,295 @@
     }
   });
 </script>
+<!-- ARTICLE: TRAVEL -->
+<div class="article-overlay" id="article-travel">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('travel')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Travel · Summer 2026</span>
+    <h1 class="article-title">Top 10 Tips for Travelling with Twins This Summer</h1>
+    <p class="article-intro">The first time I mentioned taking the twins away for a holiday, my mum looked at me the way people look at someone who's just announced they're swimming the Channel. Dramatic — but also, I understood it. Travelling with one baby is a logistical challenge. Travelling with two is an entirely different sport. Here's everything I've learned, tested, and wish I'd known sooner.</p>
+
+    <div class="article-body">
+
+      <div class="item-number">01</div>
+      <h3>Book Direct Flights Wherever Possible</h3>
+      <p>A layover with twins is something to be avoided at almost any cost. The combination of two unsettled babies, a stuffed changing bag, a gate change, and a tight connection is genuinely the stuff of nightmares. Pay the extra for a direct flight — your future self will thank you with their whole heart. If a direct route isn't available, choose the longest possible layover so you have room to breathe, feed, change, and settle before the next leg.</p>
+
+      <div class="item-number">02</div>
+      <h3>Request a Bassinet Row Early — and Call to Confirm</h3>
+      <p>Most airlines offer bassinet attachments on bulkhead rows for infants, but there are only a handful on any given flight and they go fast. Book as early as possible and call the airline directly to confirm the reservation — don't just rely on a website tick box. Bassinets mean you can put one (or both, if they're small enough) down during the quieter parts of the flight, which is an absolute lifeline on a longer journey. Check the weight and age limits for your specific airline before you travel.</p>
+
+      <div class="item-number">03</div>
+      <h3>Pack Your Changing Bag Like a Military Operation</h3>
+      <p>The golden rule for travelling with twins is this: assume everything will go wrong at the worst possible moment, then pack accordingly. That means double the nappies you think you need, double the changes of clothes (for the babies and one spare top for you — trust me), more wipes than feels reasonable, nappy bags, a mini changing mat, and any creams or medicines in your hand luggage. Organise everything into labelled zip pouches so you can find things one-handed in a dark cabin. A good changing backpack rather than a shoulder bag is worth its weight in gold when you're navigating an airport with a twin pram.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vGRvw7" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Changing Backpacks on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">04</div>
+      <h3>Use a Twin Pram That Folds Quickly and Fits Airline Rules</h3>
+      <p>Before you travel, check your airline's pram policy carefully — most will gate-check a pram for free, but size and weight restrictions vary. Practice folding your pram one-handed before you go, because you will absolutely need to do it while holding a baby at some point. If your double pram is very large or heavy, it might be worth hiring a lightweight double buggy at your destination rather than battling with yours at the airport. Several holiday destinations now have excellent pram hire services specifically for this reason.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xikNTi" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Lightweight Double Buggies on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">05</div>
+      <h3>Time Your Travel Around Their Sleep Schedule</h3>
+      <p>If you have any flexibility over your departure time, book around the twins' natural sleep window. An overnight flight or a journey that coincides with their nap time gives you the best chance of a calm journey. It won't always work — babies are gloriously unpredictable — but stacking the odds in your favour makes a genuine difference. If they're on a reasonable routine at home, try to maintain it as much as possible in the days before travel to avoid an already-disrupted baby arriving at the airport overtired.</p>
+
+      <div class="item-number">06</div>
+      <h3>Bring More Formula, Milk, or Snacks Than You Think You Need</h3>
+      <p>Delays happen. Flights sit on runways. Connections are missed. Whatever your twins eat or drink, bring significantly more than you think you'll need in your hand luggage. UK airports allow baby formula and expressed breast milk through security in reasonable quantities — you may need to declare it and allow extra time for it to be checked. Pre-measured formula in individual dispensers is a brilliant travel hack: no fumbling with tubs in a turbulent cabin. For older babies starting on solids, familiar pouches are compact, mess-free, and reassuringly easy to manage mid-journey.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4oglpog" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Formula Travel Dispensers on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">07</div>
+      <h3>Bring a Portable Blackout Blind for the Accommodation</h3>
+      <p>This is one of the most underrated travel tips for any baby, doubled for twins. Holiday accommodation rarely has adequate blackout — and two babies who won't settle because light is streaming through thin curtains at 5am is not a restful start to the day. A portable blackout blind that attaches with suction cups is compact, lightweight, and genuinely one of the best travel investments you'll make. It takes minutes to fit and turns an unfamiliar room into something that resembles home sleep conditions almost immediately.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4acDTAz" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Portable Blackout Blinds on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">08</div>
+      <h3>Book Accommodation with a Separate Sleeping Space</h3>
+      <p>A hotel room with one big bed and two travel cots is not the holiday you deserve. If at all possible, book a villa, apartment, or family suite where the twins can sleep in a separate room — or at least behind a partition. You will not be able to relax, eat dinner, or speak in a normal voice if both babies are sleeping two metres away from you. Many UK holiday companies and villa rental sites now specifically filter for twin-friendly or baby-friendly properties. It's worth paying a little more for the luxury of an actual evening.</p>
+
+      <div class="item-number">09</div>
+      <h3>Embrace the Airport Early — Use Every Perk Available</h3>
+      <p>Arrive earlier than you think necessary, and make absolutely no apology for using every family-friendly facility the airport offers. Most UK airports have family security lanes, family lounges, and dedicated changing areas — use all of them. Many airlines offer priority boarding for families with young children: take it, every single time, without a flicker of guilt. Getting onto the plane first means you can get settled, stow your bags, assemble your feeding setup, and be ready before the cabin fills up. It makes an enormous difference to the whole experience.</p>
+
+      <div class="item-number">10</div>
+      <h3>Lower Your Expectations and Celebrate the Small Wins</h3>
+      <p>This might be the most important tip of all. Your first holiday with twins will probably not look like the sun-drenched, relaxed break you've imagined. There will be moments of chaos, at least one complete nappy disaster in a public place, and almost certainly an afternoon where both babies decide to be upset at exactly the same time. That is okay. Lower the bar to "everyone survived and we made some memories" and anything above that is a bonus. The truth is, even an imperfect holiday with your twins is a remarkable, joyful thing — and next year, it really will get easier.</p>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openArticle(id) {
+    document.getElementById('article-' + id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0,0);
+  }
+
+  function closeArticle(id) {
+    document.getElementById('article-' + id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close article on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.article-overlay.active').forEach(el => {
+        el.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+</script>
+<!-- ARTICLE: TRAVEL -->
+<div class="article-overlay" id="article-travel">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('travel')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Travel · Summer 2026</span>
+    <h1 class="article-title">Top 10 Tips for Travelling with Twins This Summer</h1>
+    <p class="article-intro">The first time I mentioned taking the twins away for a holiday, my mum looked at me the way people look at someone who's just announced they're swimming the Channel. Dramatic — but also, I understood it. Travelling with one baby is a logistical challenge. Travelling with two is an entirely different sport. Here's everything I've learned, tested, and wish I'd known sooner.</p>
+
+    <div class="article-body">
+
+      <div class="item-number">01</div>
+      <h3>Book Direct Flights Wherever Possible</h3>
+      <p>A layover with twins is something to be avoided at almost any cost. The combination of two unsettled babies, a stuffed changing bag, a gate change, and a tight connection is genuinely the stuff of nightmares. Pay the extra for a direct flight — your future self will thank you with their whole heart. If a direct route isn't available, choose the longest possible layover so you have room to breathe, feed, change, and settle before the next leg.</p>
+
+      <div class="item-number">02</div>
+      <h3>Request a Bassinet Row Early — and Call to Confirm</h3>
+      <p>Most airlines offer bassinet attachments on bulkhead rows for infants, but there are only a handful on any given flight and they go fast. Book as early as possible and call the airline directly to confirm the reservation — don't just rely on a website tick box. Bassinets mean you can put one (or both, if they're small enough) down during the quieter parts of the flight, which is an absolute lifeline on a longer journey. Check the weight and age limits for your specific airline before you travel.</p>
+
+      <div class="item-number">03</div>
+      <h3>Pack Your Changing Bag Like a Military Operation</h3>
+      <p>The golden rule for travelling with twins is this: assume everything will go wrong at the worst possible moment, then pack accordingly. That means double the nappies you think you need, double the changes of clothes (for the babies and one spare top for you — trust me), more wipes than feels reasonable, nappy bags, a mini changing mat, and any creams or medicines in your hand luggage. Organise everything into labelled zip pouches so you can find things one-handed in a dark cabin. A good changing backpack rather than a shoulder bag is worth its weight in gold when you're navigating an airport with a twin pram.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vGRvw7" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Changing Backpacks on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">04</div>
+      <h3>Use a Twin Pram That Folds Quickly and Fits Airline Rules</h3>
+      <p>Before you travel, check your airline's pram policy carefully — most will gate-check a pram for free, but size and weight restrictions vary. Practice folding your pram one-handed before you go, because you will absolutely need to do it while holding a baby at some point. If your double pram is very large or heavy, it might be worth hiring a lightweight double buggy at your destination rather than battling with yours at the airport. Several holiday destinations now have excellent pram hire services specifically for this reason.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xikNTi" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Lightweight Double Buggies on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">05</div>
+      <h3>Time Your Travel Around Their Sleep Schedule</h3>
+      <p>If you have any flexibility over your departure time, book around the twins' natural sleep window. An overnight flight or a journey that coincides with their nap time gives you the best chance of a calm journey. It won't always work — babies are gloriously unpredictable — but stacking the odds in your favour makes a genuine difference. If they're on a reasonable routine at home, try to maintain it as much as possible in the days before travel to avoid an already-disrupted baby arriving at the airport overtired.</p>
+
+      <div class="item-number">06</div>
+      <h3>Bring More Formula, Milk, or Snacks Than You Think You Need</h3>
+      <p>Delays happen. Flights sit on runways. Connections are missed. Whatever your twins eat or drink, bring significantly more than you think you'll need in your hand luggage. UK airports allow baby formula and expressed breast milk through security in reasonable quantities — you may need to declare it and allow extra time for it to be checked. Pre-measured formula in individual dispensers is a brilliant travel hack: no fumbling with tubs in a turbulent cabin. For older babies starting on solids, familiar pouches are compact, mess-free, and reassuringly easy to manage mid-journey.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4oglpog" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Formula Travel Dispensers on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">07</div>
+      <h3>Bring a Portable Blackout Blind for the Accommodation</h3>
+      <p>This is one of the most underrated travel tips for any baby, doubled for twins. Holiday accommodation rarely has adequate blackout — and two babies who won't settle because light is streaming through thin curtains at 5am is not a restful start to the day. A portable blackout blind that attaches with suction cups is compact, lightweight, and genuinely one of the best travel investments you'll make. It takes minutes to fit and turns an unfamiliar room into something that resembles home sleep conditions almost immediately.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4acDTAz" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Portable Blackout Blinds on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">08</div>
+      <h3>Book Accommodation with a Separate Sleeping Space</h3>
+      <p>A hotel room with one big bed and two travel cots is not the holiday you deserve. If at all possible, book a villa, apartment, or family suite where the twins can sleep in a separate room — or at least behind a partition. You will not be able to relax, eat dinner, or speak in a normal voice if both babies are sleeping two metres away from you. Many UK holiday companies and villa rental sites now specifically filter for twin-friendly or baby-friendly properties. It's worth paying a little more for the luxury of an actual evening.</p>
+
+      <div class="item-number">09</div>
+      <h3>Embrace the Airport Early — Use Every Perk Available</h3>
+      <p>Arrive earlier than you think necessary, and make absolutely no apology for using every family-friendly facility the airport offers. Most UK airports have family security lanes, family lounges, and dedicated changing areas — use all of them. Many airlines offer priority boarding for families with young children: take it, every single time, without a flicker of guilt. Getting onto the plane first means you can get settled, stow your bags, assemble your feeding setup, and be ready before the cabin fills up. It makes an enormous difference to the whole experience.</p>
+
+      <div class="item-number">10</div>
+      <h3>Lower Your Expectations and Celebrate the Small Wins</h3>
+      <p>This might be the most important tip of all. Your first holiday with twins will probably not look like the sun-drenched, relaxed break you've imagined. There will be moments of chaos, at least one complete nappy disaster in a public place, and almost certainly an afternoon where both babies decide to be upset at exactly the same time. That is okay. Lower the bar to "everyone survived and we made some memories" and anything above that is a bonus. The truth is, even an imperfect holiday with your twins is a remarkable, joyful thing — and next year, it really will get easier.</p>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openArticle(id) {
+    document.getElementById('article-' + id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0,0);
+  }
+
+  function closeArticle(id) {
+    document.getElementById('article-' + id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close article on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.article-overlay.active').forEach(el => {
+        el.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+</script>
+</body>
+<!-- ARTICLE: TRAVEL -->
+<div class="article-overlay" id="article-travel">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('travel')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Travel · Summer 2026</span>
+    <h1 class="article-title">Top 10 Tips for Travelling with Twins This Summer</h1>
+    <p class="article-intro">The first time I mentioned taking the twins away for a holiday, my mum looked at me the way people look at someone who's just announced they're swimming the Channel. Dramatic — but also, I understood it. Travelling with one baby is a logistical challenge. Travelling with two is an entirely different sport. Here's everything I've learned, tested, and wish I'd known sooner.</p>
+
+    <div class="article-body">
+
+      <div class="item-number">01</div>
+      <h3>Book Direct Flights Wherever Possible</h3>
+      <p>A layover with twins is something to be avoided at almost any cost. The combination of two unsettled babies, a stuffed changing bag, a gate change, and a tight connection is genuinely the stuff of nightmares. Pay the extra for a direct flight — your future self will thank you with their whole heart. If a direct route isn't available, choose the longest possible layover so you have room to breathe, feed, change, and settle before the next leg.</p>
+
+      <div class="item-number">02</div>
+      <h3>Request a Bassinet Row Early — and Call to Confirm</h3>
+      <p>Most airlines offer bassinet attachments on bulkhead rows for infants, but there are only a handful on any given flight and they go fast. Book as early as possible and call the airline directly to confirm the reservation — don't just rely on a website tick box. Bassinets mean you can put one (or both, if they're small enough) down during the quieter parts of the flight, which is an absolute lifeline on a longer journey. Check the weight and age limits for your specific airline before you travel.</p>
+
+      <div class="item-number">03</div>
+      <h3>Pack Your Changing Bag Like a Military Operation</h3>
+      <p>The golden rule for travelling with twins is this: assume everything will go wrong at the worst possible moment, then pack accordingly. That means double the nappies you think you need, double the changes of clothes (for the babies and one spare top for you — trust me), more wipes than feels reasonable, nappy bags, a mini changing mat, and any creams or medicines in your hand luggage. Organise everything into labelled zip pouches so you can find things one-handed in a dark cabin. A good changing backpack rather than a shoulder bag is worth its weight in gold when you're navigating an airport with a twin pram.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="PASTE-YOUR-AMAZON-LINK-HERE" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Changing Backpacks on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">04</div>
+      <h3>Use a Twin Pram That Folds Quickly and Fits Airline Rules</h3>
+      <p>Before you travel, check your airline's pram policy carefully — most will gate-check a pram for free, but size and weight restrictions vary. Practice folding your pram one-handed before you go, because you will absolutely need to do it while holding a baby at some point. If your double pram is very large or heavy, it might be worth hiring a lightweight double buggy at your destination rather than battling with yours at the airport. Several holiday destinations now have excellent pram hire services specifically for this reason.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="PASTE-YOUR-AMAZON-LINK-HERE" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Lightweight Double Buggies on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">05</div>
+      <h3>Time Your Travel Around Their Sleep Schedule</h3>
+      <p>If you have any flexibility over your departure time, book around the twins' natural sleep window. An overnight flight or a journey that coincides with their nap time gives you the best chance of a calm journey. It won't always work — babies are gloriously unpredictable — but stacking the odds in your favour makes a genuine difference. If they're on a reasonable routine at home, try to maintain it as much as possible in the days before travel to avoid an already-disrupted baby arriving at the airport overtired.</p>
+
+      <div class="item-number">06</div>
+      <h3>Bring More Formula, Milk, or Snacks Than You Think You Need</h3>
+      <p>Delays happen. Flights sit on runways. Connections are missed. Whatever your twins eat or drink, bring significantly more than you think you'll need in your hand luggage. UK airports allow baby formula and expressed breast milk through security in reasonable quantities — you may need to declare it and allow extra time for it to be checked. Pre-measured formula in individual dispensers is a brilliant travel hack: no fumbling with tubs in a turbulent cabin. For older babies starting on solids, familiar pouches are compact, mess-free, and reassuringly easy to manage mid-journey.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="PASTE-YOUR-AMAZON-LINK-HERE" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Formula Travel Dispensers on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">07</div>
+      <h3>Bring a Portable Blackout Blind for the Accommodation</h3>
+      <p>This is one of the most underrated travel tips for any baby, doubled for twins. Holiday accommodation rarely has adequate blackout — and two babies who won't settle because light is streaming through thin curtains at 5am is not a restful start to the day. A portable blackout blind that attaches with suction cups is compact, lightweight, and genuinely one of the best travel investments you'll make. It takes minutes to fit and turns an unfamiliar room into something that resembles home sleep conditions almost immediately.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="PASTE-YOUR-AMAZON-LINK-HERE" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Portable Blackout Blinds on Amazon
+        </a>
+      </div>
+
+      <div class="item-number">08</div>
+      <h3>Book Accommodation with a Separate Sleeping Space</h3>
+      <p>A hotel room with one big bed and two travel cots is not the holiday you deserve. If at all possible, book a villa, apartment, or family suite where the twins can sleep in a separate room — or at least behind a partition. You will not be able to relax, eat dinner, or speak in a normal voice if both babies are sleeping two metres away from you. Many UK holiday companies and villa rental sites now specifically filter for twin-friendly or baby-friendly properties. It's worth paying a little more for the luxury of an actual evening.</p>
+
+      <div class="item-number">09</div>
+      <h3>Embrace the Airport Early — Use Every Perk Available</h3>
+      <p>Arrive earlier than you think necessary, and make absolutely no apology for using every family-friendly facility the airport offers. Most UK airports have family security lanes, family lounges, and dedicated changing areas — use all of them. Many airlines offer priority boarding for families with young children: take it, every single time, without a flicker of guilt. Getting onto the plane first means you can get settled, stow your bags, assemble your feeding setup, and be ready before the cabin fills up. It makes an enormous difference to the whole experience.</p>
+
+      <div class="item-number">10</div>
+      <h3>Lower Your Expectations and Celebrate the Small Wins</h3>
+      <p>This might be the most important tip of all. Your first holiday with twins will probably not look like the sun-drenched, relaxed break you've imagined. There will be moments of chaos, at least one complete nappy disaster in a public place, and almost certainly an afternoon where both babies decide to be upset at exactly the same time. That is okay. Lower the bar to "everyone survived and we made some memories" and anything above that is a bonus. The truth is, even an imperfect holiday with your twins is a remarkable, joyful thing — and next year, it really will get easier.</p>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
