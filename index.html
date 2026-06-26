@@ -81,6 +81,29 @@
 
   .nav-links a:hover { color: var(--ink); }
 
+  .nav-etsy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    background: var(--accent);
+    color: var(--cream) !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--sans);
+    font-weight: 500;
+    transition: background 0.2s;
+    border: 1px solid var(--accent);
+  }
+
+  .nav-etsy:hover {
+    background: var(--ink) !important;
+    border-color: var(--ink);
+    color: var(--cream) !important;
+  }
+
   /* HERO */
   #home {
     min-height: 100vh;
@@ -606,6 +629,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#blog">Blog</a></li>
+    <li><a href="https://www.etsy.com/uk/shop/TwinEssentialsUK" target="_blank" class="nav-etsy">🛍 Etsy Shop</a></li>
   </ul>
 </nav>
 
@@ -632,7 +656,59 @@
     <div class="about-grid">
       <div class="about-aside">
         <div class="about-photo-placeholder">
-      <img src="Twin-essentials-logo-v1.png" style="width:100%;height:100%;object-fit:contain;" />
+          <svg viewBox="0 0 420 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+            <defs>
+              <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+                <stop offset="0%" stop-color="#F0EAE2"/><stop offset="100%" stop-color="#DDD6CC"/>
+              </radialGradient>
+              <radialGradient id="blanketGrad" cx="50%" cy="30%" r="80%">
+                <stop offset="0%" stop-color="#F7F2EC"/><stop offset="100%" stop-color="#E8E0D4"/>
+              </radialGradient>
+              <radialGradient id="skin1" cx="45%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#F2D9C8"/><stop offset="100%" stop-color="#E0C0A4"/>
+              </radialGradient>
+              <radialGradient id="skin2" cx="55%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#F2D9C8"/><stop offset="100%" stop-color="#E0C0A4"/>
+              </radialGradient>
+              <radialGradient id="headGrad1" cx="40%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#F5E2D4"/><stop offset="100%" stop-color="#DDB898"/>
+              </radialGradient>
+              <radialGradient id="headGrad2" cx="60%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#F5E2D4"/><stop offset="100%" stop-color="#DDB898"/>
+              </radialGradient>
+            </defs>
+            <rect width="420" height="560" fill="url(#bgGrad)"/>
+            <ellipse cx="210" cy="480" rx="200" ry="60" fill="#C8BFB4" opacity="0.3"/>
+            <path d="M40,200 Q80,170 130,180 Q160,185 175,230 Q185,280 180,380 Q178,440 160,470 Q140,490 100,485 Q60,478 45,450 Q25,410 30,340 Q32,270 40,200Z" fill="url(#blanketGrad)" opacity="0.95"/>
+            <path d="M380,200 Q340,170 290,180 Q260,185 245,230 Q235,280 240,380 Q242,440 260,470 Q280,490 320,485 Q360,478 375,450 Q395,410 390,340 Q388,270 380,200Z" fill="url(#blanketGrad)" opacity="0.95"/>
+            <path d="M55,280 Q90,270 120,285" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <path d="M50,330 Q88,318 118,335" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M365,280 Q330,270 300,285" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <path d="M370,330 Q332,318 302,335" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <ellipse cx="122" cy="340" rx="52" ry="105" fill="url(#skin1)" opacity="0.9"/>
+            <path d="M122,240 Q124,290 122,380" stroke="#C9A88A" stroke-width="1" fill="none" opacity="0.3"/>
+            <ellipse cx="298" cy="340" rx="52" ry="105" fill="url(#skin2)" opacity="0.9"/>
+            <path d="M298,240 Q300,290 298,380" stroke="#C9A88A" stroke-width="1" fill="none" opacity="0.3"/>
+            <circle cx="122" cy="210" r="52" fill="url(#headGrad1)"/>
+            <path d="M100,175 Q112,162 125,170" stroke="#C8A882" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <path d="M110,168 Q122,158 132,165" stroke="#C8A882" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="298" cy="210" r="52" fill="url(#headGrad2)"/>
+            <path d="M276,175 Q288,162 301,170" stroke="#C8A882" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <path d="M286,168 Q298,158 308,165" stroke="#C8A882" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+            <ellipse cx="175" cy="355" rx="14" ry="10" fill="#F2D4BE" transform="rotate(-20,175,355)"/>
+            <ellipse cx="245" cy="355" rx="14" ry="10" fill="#F2D4BE" transform="rotate(20,245,355)"/>
+            <path d="M183,348 Q195,342 205,346" stroke="#E8C4A8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M237,346 Q225,342 215,346" stroke="#E8C4A8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M76,218 Q68,210 72,200 Q76,192 82,200 Q80,210 76,218Z" fill="#DDB898" opacity="0.6"/>
+            <path d="M344,218 Q352,210 348,200 Q344,192 338,200 Q340,210 344,218Z" fill="#DDB898" opacity="0.6"/>
+            <rect width="420" height="560" fill="white" opacity="0.04"/>
+            <text x="195" y="110" font-size="14" fill="#C9A0A0" opacity="0.35" text-anchor="middle">♡</text>
+            <text x="228" y="90" font-size="10" fill="#C9A0A0" opacity="0.25" text-anchor="middle">♡</text>
+            <text x="172" y="88" font-size="8" fill="#C9A0A0" opacity="0.2" text-anchor="middle">♡</text>
+            <text x="210" y="535" font-family="Georgia,serif" font-size="11" fill="#9C9080" text-anchor="middle" opacity="0.7" font-style="italic">two tiny humans, side by side</text>
+          </svg>
+        </div>
+        <p class="about-caption">Illustration — replace with your own photo</p>
       </div>
       <div class="about-body">
         <span class="section-label">About Me</span>
@@ -678,6 +754,12 @@
         <p class="blog-card-excerpt">Airports, car journeys, sunshine and two babies — it sounds terrifying, but it really is doable. Here's everything I wish I'd known before our first trip as a family of four.</p>
         <span class="blog-card-arrow">Read article →</span>
       </a>
+      <a class="blog-card" onclick="openArticle('hospital'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Pregnancy · Hospital Prep</span>
+        <div class="blog-card-title">Twin Hospital Bag Essentials: The Complete Checklist</div>
+        <p class="blog-card-excerpt">Everything you need for your hospital stay — from labour and delivery to your first precious moments with your twins. Written by a twin mum who's been there.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -690,6 +772,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#blog">Blog</a></li>
+    <li><a href="https://www.etsy.com/uk/shop/TwinEssentialsUK" target="_blank">Etsy Shop</a></li>
   </ul>
   <p class="footer-copy">© 2026 Twin Essentials UK. This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
 </footer>
@@ -994,6 +1077,192 @@
       <h3>Lower Your Expectations and Celebrate the Small Wins</h3>
       <p>This might be the most important tip of all. Your first holiday with twins will probably not look like the sun-drenched, relaxed break you've imagined. There will be moments of chaos, at least one complete nappy disaster in a public place, and almost certainly an afternoon where both babies decide to be upset at exactly the same time. That is okay. Lower the bar to "everyone survived and we made some memories" and anything above that is a bonus. The truth is, even an imperfect holiday with your twins is a remarkable, joyful thing — and next year, it really will get easier.</p>
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE: HOSPITAL BAG -->
+<div class="article-overlay" id="article-hospital">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('hospital')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Pregnancy · Hospital Prep</span>
+    <h1 class="article-title">Twin Hospital Bag Essentials: The Complete Checklist</h1>
+    <p class="article-intro">Everything you need for your hospital stay — from labour and delivery to your first precious moments with your twins. Preparing your hospital bag can feel overwhelming, but it doesn't have to be. As a twin mum myself, I remember wondering if I'd packed enough nappies, enough clothes, enough snacks — or if I'd forgotten something important. This guide covers everything so you can head to hospital feeling organised and prepared.</p>
+
+    <!-- ETSY BANNER -->
+    <div style="background:var(--accent-light);border:1px solid var(--taupe);padding:1.5rem 2rem;margin-bottom:2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">💛 Want a printable version?</p>
+        <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;">Our printable Twin Hospital Bag Checklist is available in the Twin Essentials UK Etsy Shop — easy to tick off before the big day.</p>
+      </div>
+      <a href="https://www.etsy.com/uk/shop/TwinEssentialsUK?ref=shop_profile&listing_id=4524273284" target="_blank" rel="noopener" style="display:inline-block;padding:0.75rem 1.5rem;background:var(--accent);color:var(--cream);font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:background 0.2s;" onmouseover="this.style.background='#1A1714'" onmouseout="this.style.background='#8B7355'">Get the Printable →</a>
+    </div>
+
+    <div class="article-body">
+
+      <!-- BABIES BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:0 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Twin Babies' Hospital Bag</h3>
+      <p>Your babies don't need lots of outfits during their hospital stay, but they do need plenty of the essentials. Pack for different sizes too — premature and newborn — as twin babies often arrive earlier than singletons.</p>
+
+      <h3>Clothing</h3>
+      <p>Pack more than you think you need — hospital stays with twins can stretch longer than expected and tiny clothes get through quickly.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">6–8 sleepsuits (premature and newborn sizes)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">6–8 bodysuits</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Soft hats</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Scratch mittens</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Socks</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Going home outfit for each baby</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Lightweight blanket</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Muslin cloths — pack plenty</li>
+      </ul>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vAfTzQ" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Organic Cotton Sleepsuits on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xPT5xA" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Muslin Cloth Multipack on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uV4WHK" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Cellular Baby Blankets on Amazon
+        </a>
+      </div>
+
+      <h3>Nappies &amp; Changing</h3>
+      <p>One question parents always ask is whether they should pack cotton wool or water wipes. For newborns, many hospitals recommend <strong>cotton wool and warm water</strong> during the first few days as it's the gentlest option for delicate skin. However, if you prefer wipes, <strong>WaterWipes</strong> are made with 99.9% water and are often recommended for newborns.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Newborn nappies</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Cotton wool pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">WaterWipes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nappy bags</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Barrier cream</li>
+      </ul>
+
+      <!-- FEEDING -->
+      <h3>Feeding Essentials</h3>
+      <p>Whether you choose breastfeeding, combination feeding, or formula feeding, the most important thing is that your babies are fed and thriving. Don't feel pressured into choosing one thing — try what works best for you and your babies.</p>
+
+      <h3>If you're planning to tandem breastfeed</h3>
+      <p>Twin feeding takes practice, so don't worry if it doesn't happen immediately. Ask to see the hospital's infant feeding team if available — they can often help you find comfortable positions for feeding two babies at once.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Twin nursing pillow</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nursing bras</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Breast pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nipple cream</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Silver nursing cups — soothes and saves</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Large water bottle (I was going through nearly 3 litres a day)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Healthy snacks</li>
+      </ul>
+
+      <h3>If you're formula feeding</h3>
+      <p>Hospitals usually provide guidance, but it's helpful to have your own supplies too. Remember — there is no "right" way to feed your babies. Fed is always best.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Ready-to-feed newborn formula</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Sterile bottles</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Formula dispenser for when you go home</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Bibs</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Muslin cloths</li>
+      </ul>
+
+      <!-- NICU -->
+      <h3>If Your Twins Need NICU Care</h3>
+      <p>Twin babies are more likely to arrive early, so it's worth packing with the possibility of a NICU stay in mind. Most importantly, remember that needing NICU support is very common with twins and does not mean you've done anything wrong.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Extra phone charger</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Notebook for updates</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">A book — it can get lonely and quiet sometimes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable cardigan</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Hand cream and lip balm</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Camera</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Extra muslin cloths</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Small comfort blankets for scent swapping (if your hospital allows)</li>
+      </ul>
+
+      <!-- MUM'S BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:3rem 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Mum's Hospital Bag</h3>
+      <p>Your recovery is just as important as caring for your babies. Don't neglect yourself in the packing process — a comfortable mum is a better-equipped mum.</p>
+
+      <h3>Comfortable Clothing</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Front-opening pyjamas</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Dressing gown</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Slippers and flip flops</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nursing bras</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable underwear</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Going home outfit</li>
+      </ul>
+
+      <h3>Toiletries</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Toothbrush and toothpaste</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Hairbrush and dry shampoo</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Face wash and moisturiser</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Lip balm</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Deodorant</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Shampoo and conditioner</li>
+      </ul>
+
+      <h3>C-Section Recovery Essentials</h3>
+      <p>Many twin mums have planned or emergency C-sections, so it's worth preparing even if you're hoping for a vaginal birth. Choose clothing that sits well above your scar to avoid rubbing while it heals.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">High-waisted disposable underwear</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Maternity pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Loose clothing</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Small cushion for the journey home</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Stool softeners (check with your healthcare team)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Peri bottle for gentle cleaning</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Abdominal support band (if recommended by your provider)</li>
+      </ul>
+
+      <h3>Don't Forget</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Birth plan and hospital notes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Phone and long charging cable</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Reusable water bottle</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Snacks — plenty of them</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Headphones</li>
+      </ul>
+
+      <!-- PARTNER'S BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:3rem 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Birthing Partner's Hospital Bag</h3>
+      <p>Partners often forget to pack for themselves, but labour can be long — especially if twins arrive by induction or C-section. Your partner will be supporting you throughout, so staying comfortable and well-fed helps them support you better.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable change of clothes and a hoodie</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Toiletries</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Pillow and blanket</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Refillable water bottle</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Snacks and sandwiches or a meal deal</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Phone charger</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Cash or card for parking and vending machines</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Playlist or relaxing music</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Camera</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Entertainment for waiting periods</li>
+      </ul>
+
+      <!-- FINAL THOUGHTS -->
+      <h3>Final Thoughts</h3>
+      <p>Packing your hospital bag doesn't have to be stressful. Start around 30–32 weeks if you're expecting twins, as multiple pregnancies can often arrive earlier than singleton pregnancies. You don't need every gadget or baby product on the market — focus on the essentials, prepare for a few different birth scenarios, and know that your healthcare team will help if you've forgotten something.</p>
+
+      <!-- ETSY BOTTOM BANNER -->
+      <div style="background:var(--accent-light);border:1px solid var(--taupe);padding:1.5rem 2rem;margin:2.5rem 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+        <div>
+          <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">💛 Printable Checklist</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;">If you'd like an easy-to-print version you can keep by the front door and tick off as you pack, take a look at the Twin Hospital Bag Checklist in our Etsy Shop.</p>
+        </div>
+        <a href="https://www.etsy.com/uk/shop/TwinEssentialsUK?ref=shop_profile&listing_id=4524273284" target="_blank" rel="noopener" style="display:inline-block;padding:0.75rem 1.5rem;background:var(--accent);color:var(--cream);font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:background 0.2s;" onmouseover="this.style.background='#1A1714'" onmouseout="this.style.background='#8B7355'">Shop Now →</a>
+      </div>
+
+      <p style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
     </div>
   </div>
 </div>
