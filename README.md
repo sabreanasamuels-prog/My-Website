@@ -81,6 +81,29 @@
 
   .nav-links a:hover { color: var(--ink); }
 
+  .nav-etsy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    background: var(--accent);
+    color: var(--cream) !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--sans);
+    font-weight: 500;
+    transition: background 0.2s;
+    border: 1px solid var(--accent);
+  }
+
+  .nav-etsy:hover {
+    background: var(--ink) !important;
+    border-color: var(--ink);
+    color: var(--cream) !important;
+  }
+
   /* HERO */
   #home {
     min-height: 100vh;
@@ -480,6 +503,21 @@
     margin-bottom: 1rem;
   }
 
+  .article-body ul {
+    margin: 0 0 1.5rem;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .article-body ul li {
+    font-size: 0.97rem;
+    color: var(--charcoal);
+    line-height: 1.85;
+    font-weight: 300;
+    padding-left: 0.2rem;
+    margin-bottom: 0.3rem;
+  }
+
   .affiliate-link-wrap {
     display: flex;
     align-items: center;
@@ -595,6 +633,81 @@
     .article-nav { padding: 1rem 1.5rem; }
     .hero-cta { flex-direction: column; align-items: center; }
   }
+/* FREE CHECKLIST BLOCK */
+.free-checklist-block {
+  max-width: 620px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+.free-checklist-inner {
+  background: #F5F0E8;
+  border: 1px solid #B8C9D4;
+  border-radius: 10px;
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+}
+.free-checklist-badge {
+  display: inline-block;
+  background: #A8B5A2;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  padding: 0.28rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+}
+.free-checklist-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: #1A1714;
+  margin: 0 0 0.5rem;
+}
+.free-checklist-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #6B6B6B;
+  margin: 0 0 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.free-checklist-preview {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.3rem;
+  text-align: left;
+  display: inline-block;
+}
+.free-checklist-preview li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.86rem;
+  color: #4A4A4A;
+  padding: 0.25rem 0;
+  font-weight: 300;
+}
+.free-checklist-btn {
+  display: inline-block;
+  background: #A8B5A2;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 0.72rem 1.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  transition: background 0.2s;
+}
+.free-checklist-btn:hover { background: #8FA489; }
+.free-checklist-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.74rem;
+  color: #9B9B9B;
+  margin: 0;
+}
 </style>
 </head>
 <body>
@@ -606,6 +719,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#blog">Blog</a></li>
+    <li><a href="https://www.etsy.com/uk/shop/TwinEssentialsUK" target="_blank" class="nav-etsy">🛍 Etsy Shop</a></li>
   </ul>
 </nav>
 
@@ -631,60 +745,9 @@
   <div class="container-wide">
     <div class="about-grid">
       <div class="about-aside">
-        <div class="about-photo-placeholder">
-          <svg viewBox="0 0 420 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-            <defs>
-              <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
-                <stop offset="0%" stop-color="#F0EAE2"/><stop offset="100%" stop-color="#DDD6CC"/>
-              </radialGradient>
-              <radialGradient id="blanketGrad" cx="50%" cy="30%" r="80%">
-                <stop offset="0%" stop-color="#F7F2EC"/><stop offset="100%" stop-color="#E8E0D4"/>
-              </radialGradient>
-              <radialGradient id="skin1" cx="45%" cy="40%" r="60%">
-                <stop offset="0%" stop-color="#F2D9C8"/><stop offset="100%" stop-color="#E0C0A4"/>
-              </radialGradient>
-              <radialGradient id="skin2" cx="55%" cy="40%" r="60%">
-                <stop offset="0%" stop-color="#F2D9C8"/><stop offset="100%" stop-color="#E0C0A4"/>
-              </radialGradient>
-              <radialGradient id="headGrad1" cx="40%" cy="35%" r="60%">
-                <stop offset="0%" stop-color="#F5E2D4"/><stop offset="100%" stop-color="#DDB898"/>
-              </radialGradient>
-              <radialGradient id="headGrad2" cx="60%" cy="35%" r="60%">
-                <stop offset="0%" stop-color="#F5E2D4"/><stop offset="100%" stop-color="#DDB898"/>
-              </radialGradient>
-            </defs>
-            <rect width="420" height="560" fill="url(#bgGrad)"/>
-            <ellipse cx="210" cy="480" rx="200" ry="60" fill="#C8BFB4" opacity="0.3"/>
-            <path d="M40,200 Q80,170 130,180 Q160,185 175,230 Q185,280 180,380 Q178,440 160,470 Q140,490 100,485 Q60,478 45,450 Q25,410 30,340 Q32,270 40,200Z" fill="url(#blanketGrad)" opacity="0.95"/>
-            <path d="M380,200 Q340,170 290,180 Q260,185 245,230 Q235,280 240,380 Q242,440 260,470 Q280,490 320,485 Q360,478 375,450 Q395,410 390,340 Q388,270 380,200Z" fill="url(#blanketGrad)" opacity="0.95"/>
-            <path d="M55,280 Q90,270 120,285" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.6"/>
-            <path d="M50,330 Q88,318 118,335" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.5"/>
-            <path d="M365,280 Q330,270 300,285" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.6"/>
-            <path d="M370,330 Q332,318 302,335" stroke="#D4C9BA" stroke-width="1.5" fill="none" opacity="0.5"/>
-            <ellipse cx="122" cy="340" rx="52" ry="105" fill="url(#skin1)" opacity="0.9"/>
-            <path d="M122,240 Q124,290 122,380" stroke="#C9A88A" stroke-width="1" fill="none" opacity="0.3"/>
-            <ellipse cx="298" cy="340" rx="52" ry="105" fill="url(#skin2)" opacity="0.9"/>
-            <path d="M298,240 Q300,290 298,380" stroke="#C9A88A" stroke-width="1" fill="none" opacity="0.3"/>
-            <circle cx="122" cy="210" r="52" fill="url(#headGrad1)"/>
-            <path d="M100,175 Q112,162 125,170" stroke="#C8A882" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-            <path d="M110,168 Q122,158 132,165" stroke="#C8A882" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-            <circle cx="298" cy="210" r="52" fill="url(#headGrad2)"/>
-            <path d="M276,175 Q288,162 301,170" stroke="#C8A882" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-            <path d="M286,168 Q298,158 308,165" stroke="#C8A882" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-            <ellipse cx="175" cy="355" rx="14" ry="10" fill="#F2D4BE" transform="rotate(-20,175,355)"/>
-            <ellipse cx="245" cy="355" rx="14" ry="10" fill="#F2D4BE" transform="rotate(20,245,355)"/>
-            <path d="M183,348 Q195,342 205,346" stroke="#E8C4A8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7"/>
-            <path d="M237,346 Q225,342 215,346" stroke="#E8C4A8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7"/>
-            <path d="M76,218 Q68,210 72,200 Q76,192 82,200 Q80,210 76,218Z" fill="#DDB898" opacity="0.6"/>
-            <path d="M344,218 Q352,210 348,200 Q344,192 338,200 Q340,210 344,218Z" fill="#DDB898" opacity="0.6"/>
-            <rect width="420" height="560" fill="white" opacity="0.04"/>
-            <text x="195" y="110" font-size="14" fill="#C9A0A0" opacity="0.35" text-anchor="middle">♡</text>
-            <text x="228" y="90" font-size="10" fill="#C9A0A0" opacity="0.25" text-anchor="middle">♡</text>
-            <text x="172" y="88" font-size="8" fill="#C9A0A0" opacity="0.2" text-anchor="middle">♡</text>
-            <text x="210" y="535" font-family="Georgia,serif" font-size="11" fill="#9C9080" text-anchor="middle" opacity="0.7" font-style="italic">two tiny humans, side by side</text>
-          </svg>
+        <div class="about-photo-placeholder" style="background:var(--warm-white);display:flex;align-items:center;justify-content:center;">
+          <img src="Twin-essentials-logo-v1.png" alt="Twin Essentials UK logo" style="width:100%;height:100%;object-fit:contain;object-position:center;padding:2.5rem;display:block;" />
         </div>
-        <p class="about-caption">Illustration — replace with your own photo</p>
       </div>
       <div class="about-body">
         <span class="section-label">About Me</span>
@@ -703,8 +766,30 @@
     </div>
   </div>
 </section>
-
-<!-- BLOG LANDING -->
+<!-- FREE CHECKLIST DOWNLOAD BLOCK -->
+<section style="padding: 2rem 1rem;">
+  <div class="free-checklist-block">
+    <div class="free-checklist-inner">
+      <div class="free-checklist-badge">FREE DOWNLOAD</div>
+      <h3 class="free-checklist-title">Returning to Work After Twins?</h3>
+      <p class="free-checklist-subtitle">
+        Download your free checklist — a practical, week-by-week guide to help you 
+        prepare for going back to work with twins. No fluff, just the things that actually help.
+      </p>
+      <ul class="free-checklist-preview">
+        <li>✔ &nbsp;Four weeks before — childcare, flexible working &amp; commute planning</li>
+        <li>✔ &nbsp;Two weeks before — nursery prep &amp; batch cooking</li>
+        <li>✔ &nbsp;One week before — dry runs &amp; packing</li>
+        <li>✔ &nbsp;The night before — so nothing gets forgotten</li>
+      </ul>
+      <a class="free-checklist-btn" href="free_checklist_-_Returning_to_Work.pdf" download>
+        Download Free Checklist ↓
+      </a>
+      <p class="free-checklist-note">Instant PDF · Print at home · No sign-up needed</p>
+    </div>
+  </div>
+</section>
+ <!-- BLOG LANDING -->
 <section id="blog">
   <div class="container-wide">
     <div class="blog-header">
@@ -730,6 +815,36 @@
         <p class="blog-card-excerpt">Airports, car journeys, sunshine and two babies — it sounds terrifying, but it really is doable. Here's everything I wish I'd known before our first trip as a family of four.</p>
         <span class="blog-card-arrow">Read article →</span>
       </a>
+      <a class="blog-card" onclick="openArticle('hospital'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Pregnancy · Hospital Prep</span>
+        <div class="blog-card-title">Twin Hospital Bag Essentials: The Complete Checklist</div>
+        <p class="blog-card-excerpt">Everything you need for your hospital stay — from labour and delivery to your first precious moments with your twins. Written by a twin mum who's been there.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
+      <a class="blog-card" onclick="openArticle('rtwins'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Life with Twins · Returning to Work</span>
+        <div class="blog-card-title">Returning to Work After Twins: My Honest Advice from One Twin Mum to Another</div>
+        <p class="blog-card-excerpt">Going back to work after twins is a whole different experience. Here's what I wish someone had told me — the practical tips, the emotional reality, and the things that genuinely helped.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
+      <a class="blog-card" onclick="openArticle('breastfeeding'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Feeding · Breastfeeding Twins</span>
+        <div class="blog-card-title">Can You Breastfeed Twins? A Real Mum's Honest Guide to Feeding Two Babies</div>
+        <p class="blog-card-excerpt">Learn what really worked for one twin mum — feeding positions, boosting milk supply and the essential breastfeeding products that got us through.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
+      <a class="blog-card" onclick="openArticle('backtoschool'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Life with Twins · Back to School</span>
+        <div class="blog-card-title">Back to School with Twins: The Real, Practical Things That Actually Help</div>
+        <p class="blog-card-excerpt">Uniform, lunches, the night-before routine and keeping two very different children feeling like individuals — my honest, no-fluff guide to the school run with twins.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
+      <a class="blog-card" onclick="openArticle('christmas'); return false;" href="#" style="grid-column: 1 / -1; border-top: 2px solid var(--stone);">
+        <span class="blog-card-tag">Gift Guides · Christmas</span>
+        <div class="blog-card-title">Christmas Gifts for Kids: A Simple Gift Guide for Every Budget</div>
+        <p class="blog-card-excerpt">My simple three-category gift formula for keeping Christmas magical without the money stress — plus how to shop for twins without doubling every cost.</p>
+        <span class="blog-card-arrow">Read article →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -742,6 +857,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#blog">Blog</a></li>
+    <li><a href="https://www.etsy.com/uk/shop/TwinEssentialsUK" target="_blank">Etsy Shop</a></li>
   </ul>
   <p class="footer-copy">© 2026 Twin Essentials UK. This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
 </footer>
@@ -1050,17 +1166,1134 @@
   </div>
 </div>
 
+<!-- ARTICLE: HOSPITAL BAG -->
+<div class="article-overlay" id="article-hospital">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('hospital')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Pregnancy · Hospital Prep</span>
+    <h1 class="article-title">Twin Hospital Bag Essentials: The Complete Checklist</h1>
+    <p class="article-intro">Everything you need for your hospital stay — from labour and delivery to your first precious moments with your twins. Preparing your hospital bag can feel overwhelming, but it doesn't have to be. As a twin mum myself, I remember wondering if I'd packed enough nappies, enough clothes, enough snacks — or if I'd forgotten something important. This guide covers everything so you can head to hospital feeling organised and prepared.</p>
+
+    <!-- ETSY BANNER -->
+    <div style="background:var(--accent-light);border:1px solid var(--taupe);padding:1.5rem 2rem;margin-bottom:2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">💛 Want a printable version?</p>
+        <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;">Our printable Twin Hospital Bag Checklist is available in the Twin Essentials UK Etsy Shop — easy to tick off before the big day.</p>
+      </div>
+      <a href="https://www.etsy.com/uk/shop/TwinEssentialsUK?ref=shop_profile&listing_id=4524273284" target="_blank" rel="noopener" style="display:inline-block;padding:0.75rem 1.5rem;background:var(--accent);color:var(--cream);font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:background 0.2s;" onmouseover="this.style.background='#1A1714'" onmouseout="this.style.background='#8B7355'">Get the Printable →</a>
+    </div>
+
+    <div class="article-body">
+
+      <!-- BABIES BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:0 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Twin Babies' Hospital Bag</h3>
+      <p>Your babies don't need lots of outfits during their hospital stay, but they do need plenty of the essentials. Pack for different sizes too — premature and newborn — as twin babies often arrive earlier than singletons.</p>
+
+      <h3>Clothing</h3>
+      <p>Pack more than you think you need — hospital stays with twins can stretch longer than expected and tiny clothes get through quickly.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">6–8 sleepsuits (premature and newborn sizes)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">6–8 bodysuits</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Soft hats</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Scratch mittens</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Socks</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Going home outfit for each baby</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Lightweight blanket</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Muslin cloths — pack plenty</li>
+      </ul>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vAfTzQ" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Organic Cotton Sleepsuits on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xPT5xA" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Muslin Cloth Multipack on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4uV4WHK" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Cellular Baby Blankets on Amazon
+        </a>
+      </div>
+
+      <h3>Nappies &amp; Changing</h3>
+      <p>One question parents always ask is whether they should pack cotton wool or water wipes. For newborns, many hospitals recommend <strong>cotton wool and warm water</strong> during the first few days as it's the gentlest option for delicate skin. However, if you prefer wipes, <strong>WaterWipes</strong> are made with 99.9% water and are often recommended for newborns.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Newborn nappies</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Cotton wool pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">WaterWipes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nappy bags</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Barrier cream</li>
+      </ul>
+
+      <!-- FEEDING -->
+      <h3>Feeding Essentials</h3>
+      <p>Whether you choose breastfeeding, combination feeding, or formula feeding, the most important thing is that your babies are fed and thriving. Don't feel pressured into choosing one thing — try what works best for you and your babies.</p>
+
+      <h3>If you're planning to tandem breastfeed</h3>
+      <p>Twin feeding takes practice, so don't worry if it doesn't happen immediately. Ask to see the hospital's infant feeding team if available — they can often help you find comfortable positions for feeding two babies at once.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Twin nursing pillow</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nursing bras</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Breast pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nipple cream</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Silver nursing cups — soothes and saves</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Large water bottle (I was going through nearly 3 litres a day)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Healthy snacks</li>
+      </ul>
+
+      <h3>If you're formula feeding</h3>
+      <p>Hospitals usually provide guidance, but it's helpful to have your own supplies too. Remember — there is no "right" way to feed your babies. Fed is always best.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Ready-to-feed newborn formula</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Sterile bottles</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Formula dispenser for when you go home</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Bibs</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Muslin cloths</li>
+      </ul>
+
+      <!-- NICU -->
+      <h3>If Your Twins Need NICU Care</h3>
+      <p>Twin babies are more likely to arrive early, so it's worth packing with the possibility of a NICU stay in mind. Most importantly, remember that needing NICU support is very common with twins and does not mean you've done anything wrong.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Extra phone charger</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Notebook for updates</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">A book — it can get lonely and quiet sometimes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable cardigan</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Hand cream and lip balm</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Camera</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Extra muslin cloths</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Small comfort blankets for scent swapping (if your hospital allows)</li>
+      </ul>
+
+      <!-- MUM'S BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:3rem 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Mum's Hospital Bag</h3>
+      <p>Your recovery is just as important as caring for your babies. Don't neglect yourself in the packing process — a comfortable mum is a better-equipped mum.</p>
+
+      <h3>Comfortable Clothing</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Front-opening pyjamas</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Dressing gown</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Slippers and flip flops</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Nursing bras</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable underwear</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Going home outfit</li>
+      </ul>
+
+      <h3>Toiletries</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Toothbrush and toothpaste</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Hairbrush and dry shampoo</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Face wash and moisturiser</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Lip balm</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Deodorant</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Shampoo and conditioner</li>
+      </ul>
+
+      <h3>C-Section Recovery Essentials</h3>
+      <p>Many twin mums have planned or emergency C-sections, so it's worth preparing even if you're hoping for a vaginal birth. Choose clothing that sits well above your scar to avoid rubbing while it heals.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">High-waisted disposable underwear</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Maternity pads</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Loose clothing</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Small cushion for the journey home</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Stool softeners (check with your healthcare team)</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Peri bottle for gentle cleaning</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Abdominal support band (if recommended by your provider)</li>
+      </ul>
+
+      <h3>Don't Forget</h3>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Birth plan and hospital notes</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Phone and long charging cable</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Reusable water bottle</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Snacks — plenty of them</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Headphones</li>
+      </ul>
+
+      <!-- PARTNER'S BAG -->
+      <h3 style="font-family:var(--serif);font-size:1.9rem;font-weight:300;color:var(--ink);margin:3rem 0 1.5rem;border-bottom:1px solid var(--stone);padding-bottom:0.75rem;">Birthing Partner's Hospital Bag</h3>
+      <p>Partners often forget to pack for themselves, but labour can be long — especially if twins arrive by induction or C-section. Your partner will be supporting you throughout, so staying comfortable and well-fed helps them support you better.</p>
+      <ul style="margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Comfortable change of clothes and a hoodie</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Toiletries</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Pillow and blanket</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Refillable water bottle</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Snacks and sandwiches or a meal deal</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Phone charger</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Cash or card for parking and vending machines</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Playlist or relaxing music</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Camera</li>
+        <li style="font-size:0.97rem;color:var(--charcoal);font-weight:300;">Entertainment for waiting periods</li>
+      </ul>
+
+      <!-- FINAL THOUGHTS -->
+      <h3>Final Thoughts</h3>
+      <p>Packing your hospital bag doesn't have to be stressful. Start around 30–32 weeks if you're expecting twins, as multiple pregnancies can often arrive earlier than singleton pregnancies. You don't need every gadget or baby product on the market — focus on the essentials, prepare for a few different birth scenarios, and know that your healthcare team will help if you've forgotten something.</p>
+
+      <!-- ETSY BOTTOM BANNER -->
+      <div style="background:var(--accent-light);border:1px solid var(--taupe);padding:1.5rem 2rem;margin:2.5rem 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+        <div>
+          <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">💛 Printable Checklist</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;">If you'd like an easy-to-print version you can keep by the front door and tick off as you pack, take a look at the Twin Hospital Bag Checklist in our Etsy Shop.</p>
+        </div>
+        <a href="https://www.etsy.com/uk/shop/TwinEssentialsUK?ref=shop_profile&listing_id=4524273284" target="_blank" rel="noopener" style="display:inline-block;padding:0.75rem 1.5rem;background:var(--accent);color:var(--cream);font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:background 0.2s;" onmouseover="this.style.background='#1A1714'" onmouseout="this.style.background='#8B7355'">Shop Now →</a>
+      </div>
+
+      <p style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE: RETURNING TO WORK -->
+<div class="article-overlay" id="article-rtwins">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('rtwins')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Life with Twins · Returning to Work</span>
+    <h1 class="article-title">Returning to Work After Twins: My Honest Advice from One Twin Mum to Another</h1>
+    <!-- FREE CHECKLIST DOWNLOAD BLOCK -->
+<section style="padding: 2rem 1rem;">
+  <div class="free-checklist-block">
+    <div class="free-checklist-inner">
+      <div class="free-checklist-badge">FREE DOWNLOAD</div>
+      <h3 class="free-checklist-title">Returning to Work After Twins?</h3>
+      <p class="free-checklist-subtitle">
+        Download your free checklist — a practical, week-by-week guide to help you 
+        prepare for going back to work with twins. No fluff, just the things that actually help.
+      </p>
+      <ul class="free-checklist-preview">
+        <li>✔ &nbsp;Four weeks before — childcare, flexible working &amp; commute planning</li>
+        <li>✔ &nbsp;Two weeks before — nursery prep &amp; batch cooking</li>
+        <li>✔ &nbsp;One week before — dry runs &amp; packing</li>
+        <li>✔ &nbsp;The night before — so nothing gets forgotten</li>
+      </ul>
+      <a class="free-checklist-btn" href="free_checklist_-_Returning_to_Work.pdf" download>
+        Download Free Checklist ↓
+      </a>
+      <p class="free-checklist-note">Instant PDF · Print at home · No sign-up needed</p>
+    </div>
+  </div>
+</section>
+   <p class="article-intro">Returning to work after my twins were born felt… amazing. There, I said it. After breastfeeding for what felt like forever and spending every waking minute keeping two tiny humans alive, going back to work gave me a small piece of myself back. Even if it was only during those eight sweaty minutes on the Tube before the emails started.</p>
+
+    <div class="article-body">
+
+      <p>Of course, I missed my babies terribly. I still remember collecting them from nursery and feeling emotional seeing their little faces at the end of the day. But if you're a twin parent, you'll understand this feeling. Looking after twins is wonderful. It's also incredibly hard. And it's okay to admit that having part of your identity back feels good.</p>
+
+      <p>Unfortunately, that feeling didn't last for long. As the weeks went on, I found myself trying to be everything to everyone. I wanted to be the perfect employee, the perfect mum, the perfect partner and somehow keep the house running too. Reality quickly hit. The nursery bugs arrived. The washing piled up. Work became overwhelming. I put so much pressure on myself that it eventually affected both my mental and physical health. A short stay in hospital was the wake-up call I needed. It forced me to slow down and, most importantly, realise that asking for help isn't a weakness.</p>
+
+      <p>If you're preparing to return to work after having twins, I hope these tips make your transition a little easier than mine.</p>
+
+      <h3>Remember: You're Not Going Back to Your Old Life</h3>
+      <p>This is probably the biggest mindset shift I had to make. I wasn't returning to the person I was before becoming a mum. I was returning as someone completely different. Your priorities change. Your energy changes. Your schedule definitely changes. Give yourself permission to learn this new version of life instead of expecting yourself to slot back into your old routine overnight.</p>
+
+      <h3>Phase Your Return If You Can</h3>
+      <p>If your employer allows it, consider returning gradually. Working a few days a week before returning full-time helped me adjust emotionally, but it also helped my twins settle into nursery without everything changing at once. It gave all three of us time to adapt. And don't underestimate how comforting it is for twins to learn that they can feel safe and secure with other trusted adults too.</p>
+
+      <h3>Talk to Your Employer About Flexible Working</h3>
+      <p>Since flexible working is becoming more common, it's always worth having an open conversation with your employer. Could you start earlier and finish earlier? Work from home one day a week? Compress your hours? Adjust your lunch break around nursery drop-offs? If your partner also has flexibility, think about staggering your working hours. One parent doing drop-off while the other handles collection can make a huge difference to everyone's stress levels. Sometimes the smallest changes create the biggest improvements.</p>
+
+      <h3>Expect Nursery Bugs (Because They Will Come)</h3>
+      <p>Nobody really prepares you for this part. It can feel like the twins have only just recovered before the next cough, cold or sickness bug arrives. At first, I felt guilty every time I had to phone work. Eventually, I realised this is simply part of having children in childcare. If possible, prepare a little "sick day kit" in advance so you're not searching the cupboards while comforting poorly children.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vKqCYw" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Thermometer on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4oZwA59" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Children's Medicine Organiser on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4at7fdU" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Medicine Syringe Set on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4gfQDds" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Cool Packs on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wnyZcA" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Humidifier on Amazon
+        </a>
+      </div>
+<!-- FREE CHECKLIST DOWNLOAD BLOCK -->
+<section style="padding: 2rem 1rem;">
+  <div class="free-checklist-block">
+    <div class="free-checklist-inner">
+      <div class="free-checklist-badge">FREE DOWNLOAD</div>
+      <h3 class="free-checklist-title">Returning to Work After Twins?</h3>
+      <p class="free-checklist-subtitle">
+        Download your free checklist — a practical, week-by-week guide to help you 
+        prepare for going back to work with twins. No fluff, just the things that actually help.
+      </p>
+      <ul class="free-checklist-preview">
+        <li>✔ &nbsp;Four weeks before — childcare, flexible working &amp; commute planning</li>
+        <li>✔ &nbsp;Two weeks before — nursery prep &amp; batch cooking</li>
+        <li>✔ &nbsp;One week before — dry runs &amp; packing</li>
+        <li>✔ &nbsp;The night before — so nothing gets forgotten</li>
+      </ul>
+      <a class="free-checklist-btn" href="free_checklist_-_Returning_to_Work.pdf" download>
+        Download Free Checklist ↓
+      </a>
+      <p class="free-checklist-note">Instant PDF · Print at home · No sign-up needed</p>
+    </div>
+  </div>
+</section>
+      <h3>Lower Your Standards (Temporarily)</h3>
+      <p>Before returning to work, I imagined I'd still cook homemade meals every evening, keep the house spotless, stay on top of the laundry and somehow still have energy to play for hours before bedtime. Reality? Sometimes dinner was fish fingers. Sometimes the washing stayed in the basket. Sometimes toys covered every room in the house. And you know what? The twins didn't care. They cared that I cuddled them after nursery. That I read them a bedtime story. That I laughed with them. The perfectly folded washing could wait. A messy home often means it's a happy home.</p>
+
+      <h3>Don't Let the Laundry Take Over Your Life</h3>
+      <p>Laundry somehow doubles (or triples) when you have twins. One little trick that genuinely helped me was using the delayed start function on the washing machine. I'd load it before work, set the timer to finish shortly before I got home and by the time we'd finished dinner the washing was freshly done and ready to hang up. It's such a small thing, but those little systems make life easier.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4pgIqIx" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Laundry Baskets on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vXZtSd" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Mesh Laundry Bags for Baby Socks on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4eQVDma" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Stain Remover on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/44IPMe0" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Clothes Airer on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wkJFZj" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Foldable Laundry Sorter on Amazon
+        </a>
+      </div>
+
+      <h3>Make Dinner as Easy as Possible</h3>
+      <p>The last thing you'll want after a full day at work is to cook from scratch while two hungry toddlers are wrapped around your legs. Batch cooking became one of my biggest time savers. If future-you can make life easier for tired-you, do it. Even having a freezer stocked with homemade meals or simple family favourites can take away so much stress.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3Tahm1g" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Slow Cooker on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4eCHBWC" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Air Fryer on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4gPhLju" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Glass Meal Prep Containers on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vF2M07" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Freezer Labels on Amazon
+        </a>
+      </div>
+
+      <h3>If You're Breastfeeding, Be Kind to Yourself</h3>
+      <p>Returning to work while breastfeeding twins brings its own challenges. Whether you continue feeding, pump at work, combine breastfeeding with formula or decide it's the right time to stop, there is no "perfect" way. Do what works for you and your family. Fed babies. A healthy mum. That's what matters.</p>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4eN1MkV" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Breast Pump on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4p2Xidq" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Hands-Free Pumping Bra on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xZkZar" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Milk Storage Bags on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4v7kBUD" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Nursing Pads on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3RbWJkM" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Insulated Cooler Bag on Amazon
+        </a>
+      </div>
+
+      <h3>Working From Home? Use Those Little Moments Wisely</h3>
+      <p>If you work from home and happen to finish a meeting a little early, resist the temptation to start another job immediately. Sometimes I'd spend ten minutes reorganising the twins' play area before they came home. Seeing a "new" setup often kept them entertained for longer, buying me enough time to make dinner or unpack nursery bags. Little wins count.</p>
+
+      <h3>Accept Help Without Feeling Guilty</h3>
+      <p>This one took me far too long to learn. If someone offers to help — say yes. Maybe Grandma can collect the twins. Maybe a friend can bring dinner. Maybe your partner can tackle the washing while you spend time with the children. You don't have to prove you can do everything on your own. Parenting twins was never meant to be a one-person job.</p>
+
+      <h3>Most Importantly… Rest</h3>
+      <p>The first few weeks back at work are exhausting. Actually, if I'm being completely honest, the first few months can feel like you've run several marathons back-to-back. So when you finally get five minutes — sit down. Eat the chocolate. Watch your favourite programme. Have the glass of wine (if that's your thing). Go to bed early. Rest isn't something you have to earn. You already have.</p>
+
+      <h3>Final Thoughts</h3>
+      <p>Returning to work after twins isn't just about going back to your job. It's about finding yourself again. Some days you'll feel like you've got everything under control. Other days you'll wonder whether everyone else is finding it easier than you. I promise they're probably not.</p>
+      <p>If there's one thing I'd like you to take away from this article, it's this: you don't have to be perfect. Your twins don't need a perfect mum. They need a happy, healthy one. So give yourself grace. Accept help. Celebrate the small wins. And remember — you've already done one of the hardest jobs in the world by raising twins. You've got this.</p>
+
+      <!-- ETSY BANNER -->
+      <div style="background:var(--accent-light);border:1px solid var(--taupe);padding:1.5rem 2rem;margin:2.5rem 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+        <div>
+          <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">💛 Looking for more practical tools?</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;">Explore my Twin Essentials printables — designed to help make everyday family life that little bit easier.</p>
+        </div>
+        <a href="https://www.etsy.com/uk/shop/TwinEssentialsUK?ref=shop-header-name&listing_id=4528791738&from_page=listing" target="_blank" rel="noopener" style="display:inline-block;padding:0.75rem 1.5rem;background:var(--accent);color:var(--cream);font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;" onmouseover="this.style.background='#1A1714'" onmouseout="this.style.background='#8B7355'">Visit the Etsy Shop →</a>
+      </div>
+<!-- FREE CHECKLIST DOWNLOAD BLOCK -->
+<section style="padding: 2rem 1rem;">
+  <div class="free-checklist-block">
+    <div class="free-checklist-inner">
+      <div class="free-checklist-badge">FREE DOWNLOAD</div>
+      <h3 class="free-checklist-title">Returning to Work After Twins?</h3>
+      <p class="free-checklist-subtitle">
+        Download your free checklist — a practical, week-by-week guide to help you 
+        prepare for going back to work with twins. No fluff, just the things that actually help.
+      </p>
+      <ul class="free-checklist-preview">
+        <li>✔ &nbsp;Four weeks before — childcare, flexible working &amp; commute planning</li>
+        <li>✔ &nbsp;Two weeks before — nursery prep &amp; batch cooking</li>
+        <li>✔ &nbsp;One week before — dry runs &amp; packing</li>
+        <li>✔ &nbsp;The night before — so nothing gets forgotten</li>
+      </ul>
+      <a class="free-checklist-btn" href="free_checklist_-_Returning_to_Work.pdf" download>
+        Download Free Checklist ↓
+      </a>
+      <p class="free-checklist-note">Instant PDF · Print at home · No sign-up needed</p>
+    </div>
+  </div>
+</section>
+      <!-- YOU MIGHT ALSO ENJOY -->
+      <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--stone);">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">You might also enjoy</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a onclick="closeArticle('rtwins');openArticle('travel');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> Top 10 Tips for Travelling with Twins This Summer
+          </a>
+          <a onclick="closeArticle('rtwins');openArticle('essentials');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> 15 Twin Newborn Essentials You Actually Need
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE: BREASTFEEDING -->
+<div class="article-overlay" id="article-breastfeeding">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('breastfeeding')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Feeding · Breastfeeding Twins</span>
+    <h1 class="article-title">Can You Breastfeed Twins? A Real Mum's Honest Guide to Feeding Two Babies</h1>
+
+    <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin-bottom:2.5rem;background:var(--stone);">
+      <img src="breastfeeding-twins-1.jpg" alt="Breastfeeding twins — a twin mum's honest guide" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    </div>
+
+    <p class="article-intro">"Can I really breastfeed two babies?" I'll be honest — when I found out I was expecting twins, this question completely consumed me. Not because I doubted breastfeeding. Because I couldn't picture how on earth it would actually work. Would I have enough milk? Would they both cry together? Would I ever leave the house again? I spent hours searching Google hoping someone would simply explain what breastfeeding twins really looked like. Instead, I found lots of clinical advice and very little real-life advice. So here's mine — not as a midwife, not as a lactation consultant, just as another twin mum who's been exactly where you are now.</p>
+
+    <div class="article-body">
+
+      <h3>Introduction</h3>
+      <p>Finding out you're expecting twins often brings a whole new list of questions, and one of the biggest is: can I really breastfeed two babies? The answer is yes — you absolutely can. Every family's journey is different, and whether you exclusively breastfeed, express, combination feed or use formula, the most important thing is that your babies are fed and thriving.</p>
+      <p>When I was pregnant with my twins I spent hours researching breastfeeding. I wanted to make it work but felt overwhelmed by questions: What if they're hungry at the same time? Will I have enough milk? How will I feed them when I'm out? If you're feeling the same, I hope my experience reassures you that you'll find a routine that works for your family.</p>
+
+      <h3>My Experience With Tandem Feeding</h3>
+      <p>Tandem feeding didn't come naturally to me. At first I found it overwhelming, and during the summer heat it often felt uncomfortable. I actually preferred feeding one baby at a time in the early weeks because it helped me build confidence.</p>
+      <p>As the twins grew, however, tandem feeding became a huge time saver. One unexpected superpower was that breastfeeding almost always settled both babies to sleep. Although I never found tandem feeding easy, I did find it incredibly rewarding once we found our rhythm.</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">Twin Mum Tip:</strong> Don't worry if tandem feeding feels impossible during the first few weeks.
+      </div>
+
+      <h3>Getting a Comfortable Latch</h3>
+      <p>The biggest challenge for me was getting one twin to latch correctly. My nipples became cracked and sore, so I started expressing with my Momcozy breast pump between feeds while I looked for support.</p>
+      <p>Attending a breastfeeding clinic completely changed my experience. I learnt that breastfeeding shouldn't be intensely painful and that a deeper latch made all the difference. Learning how to gently unlatch and reposition my baby, combined with Lansinoh nipple cream and nipple shields, helped me continue my breastfeeding journey.</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">Twin Mum Tip:</strong> Feeding one baby at a time helped me learn each baby's latch before I even attempted feeding both together.
+      </div>
+
+      <h3>Boosting Milk Supply</h3>
+      <p>There came a point where I thought, "I'm never going to make enough milk for two babies." It felt impossible. Every feed seemed to blur into the next one. As soon as I'd finished feeding one baby, someone wanted feeding again. If you've got newborn twins beside you while reading this, you're probably laughing because you know exactly what I mean.</p>
+      <p>Eventually I realised something. My body wasn't failing — it was exhausted. The advice everyone gives is "sleep more." Well… tell that to the twins. Instead, I focused on the things I could control. I bought a huge water bottle that lived beside my nursing chair. I kept easy snacks nearby. Whenever I managed twenty minutes to myself — whether folding washing or watching television — I attached my pump. Little by little my supply increased. Not overnight. Not magically. Just consistently. Looking back, consistency helped me far more than perfection ever did.</p>
+      <p>Once feeding became more comfortable, my next focus was milk supply. I discovered that looking after myself mattered just as much as feeding the babies. Drinking plenty of water, eating nourishing meals and resting whenever possible all helped. I also found that feeding first and pumping afterwards encouraged my body to produce more milk. Rather than sticking to a strict pumping schedule, I fitted short pumping sessions into everyday life whenever I had a spare 15–20 minutes.</p>
+
+      <h3>Breastfeeding Positions</h3>
+      <p>My favourite was the double cradle position with a twin nursing pillow. At night I often switched to the baby stack position because it worked well if one baby woke before the other. Here are the four positions most twin mums swear by:</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--stone);border:1px solid var(--stone);margin:1.5rem 0 2rem;">
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">Double Football Hold</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">Both babies tucked under each arm like a rugby ball, facing you. A great starting position for newborns and after a C-section.</p>
+        </div>
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">Double Cradle Hold</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">Babies lie across your lap in an X shape, supported by a twin nursing pillow. My personal favourite once we found our rhythm.</p>
+        </div>
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">Laid-Back Position</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">You recline, babies lie tummy-down on you. Gravity does a lot of the work, and it's wonderfully relaxed for both of you.</p>
+        </div>
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">Baby Stack Position</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">One baby feeds in cradle hold while the other lies along the same side, stacked below. Useful when one twin wakes before the other.</p>
+        </div>
+      </div>
+
+      <h3>Feeding in Public</h3>
+      <p>Once I felt confident with latching, I slowly challenged myself to feed the twins outside the house. A lightweight breastfeeding cover gave me privacy while allowing the babies to stay comfortable.</p>
+      <p>Occasionally people looked over, but I reminded myself that breastfeeding twins is something amazing to witness. My body was nourishing two babies at once, and that's something to be proud of.</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">Twin Mum Tip:</strong> There is absolutely no rush! Create small goals, like going for a walk around the block with the twins.
+      </div>
+
+      <h3>You Don't Have to Be Perfect</h3>
+      <p>One thing I wish someone had told me sooner is that breastfeeding doesn't have to be all or nothing. Some days you may exclusively breastfeed, other days you may express milk or combination feed. Every feed counts and every family finds a routine that works for them.</p>
+
+      <h3>My Recommended Breastfeeding Essentials</h3>
+      <p>These are the products that genuinely got me through those early feeding weeks with twins:</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/44mQ7Db" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Twin Breastfeeding Pillow on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3Rt2kmX" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Momcozy Breast Pump on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4pfMubQ" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Lansinoh Nipple Cream on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4vXI1x5" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Silver Nursing Cups on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4eROlQC" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Nipple Shields on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wuM4k5" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Breastfeeding Cover on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4yeUDBq" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Large Reusable Water Bottle on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4phRsoC" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Breast Milk Storage Bags on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3SNGECt" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Haakaa Silicone Milk Collector on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4yfo8Tx" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Healthy Snack Basket on Amazon
+        </a>
+      </div>
+
+      <!-- FAQ -->
+      <h3 style="margin-top:3.5rem;">Frequently Asked Questions</h3>
+      <div style="display:flex;flex-direction:column;gap:1.25rem;margin-top:1rem;">
+        <div style="border-bottom:1px solid var(--stone);padding-bottom:1.25rem;">
+          <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;">Can you exclusively breastfeed twins?</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;margin:0;">Yes, many mums do, although every journey is different.</p>
+        </div>
+        <div style="border-bottom:1px solid var(--stone);padding-bottom:1.25rem;">
+          <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;">Will my body produce enough milk?</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;margin:0;">In many cases, yes. Milk production works on supply and demand.</p>
+        </div>
+        <div style="border-bottom:1px solid var(--stone);padding-bottom:1.25rem;">
+          <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;">What is the best position?</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;margin:0;">Many parents start with the double football hold before finding the position that suits them best.</p>
+        </div>
+        <div style="padding-bottom:0.25rem;">
+          <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;">Is combination feeding okay?</p>
+          <p style="font-size:0.92rem;color:var(--charcoal);font-weight:300;margin:0;">Absolutely. A fed baby and a healthy mum are always the priority.</p>
+        </div>
+      </div>
+
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:3rem 0 0;background:var(--stone);">
+        <img src="breastfeeding-twins-2.jpg" alt="A twin mum breastfeeding two babies" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+
+      <!-- YOU MIGHT ALSO ENJOY -->
+      <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--stone);">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">You might also enjoy</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a onclick="closeArticle('breastfeeding');openArticle('hospital');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> Twin Hospital Bag Essentials: The Complete Checklist
+          </a>
+          <a onclick="closeArticle('breastfeeding');openArticle('essentials');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> 15 Twin Newborn Essentials You Actually Need
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE: BACK TO SCHOOL -->
+<div class="article-overlay" id="article-backtoschool">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('backtoschool')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Life with Twins · Back to School</span>
+    <h1 class="article-title">Back to School with Twins: The Real, Practical Things That Actually Help</h1>
+
+    <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin-bottom:2.5rem;background:var(--stone);">
+      <img src="back-to-school-1.jpg" alt="Stitching name labels into school uniform as part of the night-before routine" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    </div>
+
+    <p class="article-intro">What's the age-old saying… preparation is key? Or is it that the key to success is preparing? Anyway, I'm sure whoever wrote it didn't have twins! 😂 That doesn't mean they're wrong though. When you've got twins, a little preparation can make the difference between a calm morning and wondering why you're standing in the kitchen with one shoe on and no idea where the other one is.</p>
+
+    <div class="article-body">
+
+      <p>This article isn't about spending four hours in the kitchen meal-prepping or having your whole September planned by August. I want to give you the real, practical things I actually think can help day-to-day life run a little more smoothly when you're dealing with twins.</p>
+      <p>Whether your twins are just starting school, you're already halfway through the school years, or you've simply got two children bringing home double the amount of stuff, hopefully you'll find something here that makes life a little easier.</p>
+
+      <h3>Uniform</h3>
+      <p>As with anything kids get, especially when there's any scope for freedom, expect things to get lost. And if buying double the uniform wasn't expensive enough, when they lose items like jumpers or blazers, I can already feel the hole burning through my pockets!</p>
+      <p>As a result, I bought personalised labels. For the simple reason that whether something has been washed, lost or "borrowed" by another child, there's a much better chance it will make its way back to you if your child's name is clearly on it.</p>
+      <p>I've tried the stickers, and honestly, they just wash off! Labelling everything is a task within itself, so what I do is whenever we take the uniform out the night before, that's when I stitch the labels into the neck of the item. It becomes part of the normal routine rather than another huge job to do all at once.</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4hXmuQI" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Personalised School Uniform Labels on Amazon
+        </a>
+      </div>
+
+      <p>And don't forget the less obvious things too — coats, PE kits, shoes, water bottles and bags can all mysteriously disappear when you have two children at school!</p>
+
+      <h3>Save Money on Uniform Where You Can</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-2.jpg" alt="Pre-loved school uniform sale rail" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>Talking about uniform and how expensive it can be for twin parents, an option more schools are getting onboard with is second-hand uniform. Which I love!</p>
+      <p>Things like blazers, jumpers and bags can really add up. If you're buying second-hand, just look out for things like discolouration, worn elbows and the stitching. Besides that, the way I see it is that in a few months they are most likely to be worn out anyway, so brand new isn't always necessary.</p>
+      <p>There are also some great options in supermarkets for trousers, skirts, tights and socks — and sometimes even shoes. Even if the school has a certain style, the odds are a supermarket or high-street shop will stock something very similar for a fraction of the cost.</p>
+      <p>If you're thinking about buying a few sizes bigger to get more wear out of the item, my advice would be to do this with items that have adjustable waists. Nothing is worse than your little one feeling uncomfortable, or being scared to run too fast because they think their trousers might fall down!</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">Twin Mum Tip:</strong> Beginning of August is a good time to start looking, as uniform is often on offer. With twins, even saving a few pounds per item can make a difference when everything is being bought twice.
+      </div>
+
+      <h3>Lunches</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-3.jpg" alt="Two packed lunchboxes with shaped sandwiches and water bottles" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>It might sound crazy to be thinking about lunches before school has even started, and don't start buying food for September now (lol!), but I would start thinking about easy, quick wins you can throw into their lunchboxes.</p>
+      <p>If your school is anything like mine, healthy snacks are a must, so I like to try and make eating them fun for the kids. Sandwiches, cheese and fruit cut into cute shapes can make lunchtime a little more exciting — and, honestly, it's a peace of mind when they don't come back home with a full lunchbox!</p>
+      <p>When you have twins, I also find that having a few things that are easy to grab, wash and refill is worth it. The less thinking you have to do on a school morning, the better. Here are a few small things I use to keep lunchboxes fun and practical:</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/45k8N74" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Stainless Steel Lunchboxes on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xuwNAp" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Cute Lunch Bags on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3TKkLV2" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Small Ice Packs on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4glRPva" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Water Bottles on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wA82lH" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Flasks for Hot Food on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3SiaL4Z" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Snack Containers on Amazon
+        </a>
+      </div>
+
+      <h3>The Night-Before Rule</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-4.jpg" alt="School bags on hooks and shoes lined up by the door" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>One thing I've learnt with three children is that mornings are not the time to be making unnecessary decisions. If you can do it the night before, do it!</p>
+      <p>Uniform out, shoes by the door, bags packed and lunchboxes ready to go. With twins, I'd also recommend having a specific place for each child's school things. It sounds small, but when you're trying to find two PE kits, two water bottles and two pairs of shoes at 8am, you'll thank yourself.</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">Twin Mum Tip:</strong> You don't need a Pinterest-perfect organisation system. You just need somewhere that everyone knows things go.
+      </div>
+
+      <h3>Personal Care</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-5.jpg" alt="Tissues, sanitiser, lip balm and hair ties for the school bag" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>Unfortunately for me, I learnt the hard way that having essentials in your bag is a must, no matter the age of the child!</p>
+      <p>I went to school with a runny nose and was constantly asking the teacher to go to the loo to blow my nose. Eventually she said no, and the tissues I had collected in my pocket ran out, so I had to sniff my way through the rest of the lesson — which annoyed me and my classmates! Since then, I've made sure to be organised and to pass this down to my kids.</p>
+      <p>Small things that make a big difference: travel-sized deodorant, pocket tissue packs, hair ties and hand sanitiser.</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4hWab7g" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Hand Sanitiser on Amazon
+        </a>
+      </div>
+
+      <p>Depending on your children's age, you might also want to keep a small pack of wipes, lip balm or spare underwear in their school bag. Check the school's rules first, particularly for anything that needs to stay in their bag.</p>
+
+      <h3>Stationery</h3>
+      <p>My kids are still in primary school, therefore stationery isn't something we need loads of yet — however, it's something our drawers at home are filled to the brim with!</p>
+      <p>Therefore, if you're on a budget, my advice would be to use the ones you already have at home before buying another giant pack of pens just because they look nice in the shop. However, we all know that kids love shiny new things, so if you do need to buy some, multipacks can be a good way of keeping the cost down and having enough for both kids.</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4bJ45Dw" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Pens on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/45jIZbi" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Paper on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4hVaa3y" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Folders on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4g4hreO" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Calculators on Amazon
+        </a>
+      </div>
+
+      <h3>At Home: Deal With the Artwork Before It Takes Over</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-6.jpg" alt="A memory box for keepsakes and a wall for certificates" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>If there's one thing I know about schools, it's that they are eager to give parents their children's "masterpieces". And when you have twins, that can very quickly become a LOT of artwork.</p>
+      <p>Having a memory box to store them all in helps to give them a proper place. I also think it's lovely to keep some of the pieces that really mean something to you, rather than feeling like you need to keep every single drawing that comes through the door.</p>
+      <p>In addition to this, celebrating the kids' achievements helps to grow their sense of achievement. I would suggest dedicating either a pillar or a small part of the wall to certificates, or alternatively using a frame to display them. Here are a few things I found to make storing artwork and certificates easier:</p>
+
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4wWNSDe" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Folders on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4z9tUGH" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Storage Box on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3S0VWni" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Picture Frame on Amazon
+        </a>
+      </div>
+
+      <h3>And Finally… Don't Forget the Twins Are Individuals</h3>
+      <div style="width:100%;aspect-ratio:16/10;overflow:hidden;margin:1.5rem 0;background:var(--stone);">
+        <img src="back-to-school-7.jpg" alt="Two children with two very different school experiences, both worth celebrating" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <p>This one is less about buying things and more about making school life easier for you as a twin parent.</p>
+      <p>It can be tempting to treat everything as a pair because, well… they are a pair! But they are still two individual children. They might have completely different friendships, interests, teachers, strengths and things they find difficult.</p>
+      <p>Try not to compare their school experience too much. One might love school while the other takes a little longer to settle. One might come home with certificates every week while the other is quietly doing their best. Both deserve to be celebrated.</p>
+      <p>And give yourself some grace too. You're doing all of this twice. There will be mornings where you're late, forgotten something, sent one child in with the wrong water bottle or realised at the school gate that someone has left their PE kit at home. It happens.</p>
+      <p>The goal isn't to have a perfectly organised school year. It's to make those everyday moments a little easier — and to remember to enjoy watching them grow along the way.</p>
+
+      <!-- YOU MIGHT ALSO ENJOY -->
+      <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--stone);">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">You might also enjoy</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a onclick="closeArticle('backtoschool');openArticle('essentials');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> 15 Twin Newborn Essentials You Actually Need
+          </a>
+          <a onclick="closeArticle('backtoschool');openArticle('rtwins');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> Returning to Work After Twins: My Honest Advice
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE: CHRISTMAS -->
+<div class="article-overlay" id="article-christmas">
+  <div class="article-nav">
+    <button class="back-btn" onclick="closeArticle('christmas')">← Back to Blog</button>
+    <span class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#1A1714;">Twin Essentials <span style="color:#8B7355;">UK</span></span>
+  </div>
+  <div class="article-content">
+    <span class="article-eyebrow">Gift Guides · Christmas</span>
+    <h1 class="article-title">Christmas Gifts for Kids: A Simple Gift Guide for Every Budget</h1>
+
+    <p class="article-intro">I am such a Christmas person. The Christmas songs are usually playing from the beginning of October, the decorations are going up as soon as December arrives, and now that I have children, I somehow love Christmas even more. There is something about seeing Christmas through their eyes that makes all the excitement, the wrapping paper, the Christmas films and the little traditions feel even more magical. But there is one thing that can take the magic away very quickly… the cost.</p>
+
+    <div class="article-body">
+
+      <p>Christmas with children can get expensive very quickly. Between presents, food, decorations, Christmas activities, school events and all the little extras that seem to appear in December, it is very easy to spend far more than you intended. And no, I don't have an endless Christmas budget either!</p>
+      <p>So, over the years, I've come up with a really simple way of buying Christmas presents for my children without completely blowing the budget. It works whether you have £25, £50, £100 or more to spend per child, and it also works brilliantly if you have twins.</p>
+
+      <h3>My Simple Christmas Gift Formula for Children</h3>
+      <p>Rather than buying lots and lots of little presents, I like to think about three categories:</p>
+      <p style="font-family:var(--serif);font-size:1.2rem;color:var(--ink);margin:1.5rem 0;">Something to read. Something to wear. Something to play with.</p>
+      <p>It keeps things simple, gives you a starting point when you have no idea what to buy, and — most importantly — stops me from panic-buying random toys just because Christmas is getting closer!</p>
+
+      <h3>🎄 If You Have £25–£50 to Spend</h3>
+      <p>You could choose:</p>
+      <ul>
+        <li>📚 A book</li>
+        <li>👕 A piece of clothing</li>
+        <li>🧸 A toy</li>
+      </ul>
+      <p>You don't need every item to be expensive. A lovely children's book can be relatively inexpensive, which leaves more of the budget for the toy they have been asking for.</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">My Tip:</strong> Start looking early rather than waiting until December. It gives you time to compare prices and pick things up when you see a good deal.
+      </div>
+
+      <h3>🎄 If You Have £50–£100 to Spend</h3>
+      <p>With a slightly bigger budget, you could choose:</p>
+      <ul>
+        <li>📚 A couple of books or one special book</li>
+        <li>👟 An outfit or pair of shoes</li>
+        <li>🧸 A toy</li>
+      </ul>
+      <p>This is also where I would start thinking about what they actually need rather than simply buying more. If your child needs new trainers anyway, Christmas can be a good opportunity to make something practical part of their present.</p>
+
+      <h3>🎄 If You Have £100+ to Spend</h3>
+      <p>If you have a larger Christmas budget, you can still use exactly the same idea:</p>
+      <ul>
+        <li>📚 Books</li>
+        <li>👗 Outfits</li>
+        <li>👟 Shoes</li>
+        <li>🎁 One bigger or special toy</li>
+      </ul>
+      <p>And honestly, I think this is where the simple approach becomes even more useful. Having more money to spend doesn't mean you need to buy more things. Sometimes one really good present that your child has genuinely wanted is far more exciting than a pile of toys that they'll forget about by January.</p>
+
+      <h3>But What About Christmas Presents for Twins?</h3>
+      <p>Ahhh, twins. This is where Christmas shopping can get very interesting! If you have twins, you might feel like you have to buy two of absolutely everything. You don't.</p>
+      <p>Especially as they get older, there are plenty of presents that twins can share — and I actually think this can make Christmas shopping much easier. My general twin Christmas formula would be:</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--stone);border:1px solid var(--stone);margin:1.5rem 0 2rem;">
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">🎁 Something Each</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">A book each, and an item of clothing each. You can even buy a multipack of clothing and wrap the pieces separately if you're trying to stretch the budget a little further.</p>
+        </div>
+        <div style="background:var(--warm-white);padding:1.5rem;">
+          <div style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:0.4rem;">🎁 Something to Share</div>
+          <p style="font-size:0.85rem;color:var(--warm-gray);line-height:1.6;margin:0;">One larger toy or activity they can enjoy together — puzzles, LEGO or building sets, arts and crafts, pretend-play sets, train sets, dolls houses or playsets, age-appropriate games.</p>
+        </div>
+      </div>
+
+      <p>This means you're not automatically doubling the cost of every present. And let's be honest — with twins, sometimes the <em>biggest</em> gift is simply having something that keeps both of them entertained at the same time!</p>
+
+      <div style="background:var(--accent-light);border-left:3px solid var(--accent);padding:1.1rem 1.5rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--charcoal);font-size:0.92rem;line-height:1.7;">
+        💬 <strong style="font-style:normal;">My Christmas Present Rule for Twins:</strong> If you're on a tighter budget, I'd much rather do two books + one shared toy + some clothing, than feel like I have to buy two books + two toys + two outfits + two of everything else. Christmas doesn't have to be financially stressful just because you have two children of the same age. The aim isn't to make the pile of presents bigger. It's to make the presents more thoughtful.
+      </div>
+
+      <h3>Need Christmas Gift Ideas?</h3>
+      <p>I've put together some of my favourite Christmas gift ideas for children below, including options for different ages and budgets.</p>
+
+      <h4 style="font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-top:2.5rem;">🎁 Christmas Gifts Under £25</h4>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4cTp0o6" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Walkie Talkie on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4Ariu1J" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Binoculars on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xDsKl6" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Microscope / Camera on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3TcLRUX" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Drawing Board on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4AoQUSX" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Playdoh Blender on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4dh2mWX" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Match and Spell on Amazon
+        </a>
+      </div>
+
+      <h4 style="font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-top:2.5rem;">🎁 Christmas Gifts Under £50</h4>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4ronosh" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Play Food on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4h4M8Cv" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Karaoke Machine on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4xExYwP" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Gardening Tools on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/47cFoMW" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Rocket Toy Set on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4yKEAuw" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Children's Camera on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4h6IkRg" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Scooter on Amazon
+        </a>
+      </div>
+
+      <h4 style="font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-top:2.5rem;">🎁 Bigger Christmas Gifts for Children</h4>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4AoRgJh" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Rocket Launcher on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3Tf4dEO" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Bow and Arrow on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3VIQZkg" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Hammer Toy on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4yceTTQ" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Bike on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4dh3RV5" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Airflow on Amazon
+        </a>
+      </div>
+
+      <h4 style="font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-top:2.5rem;">🎁 Christmas Gifts for Twins</h4>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4dh4oGz" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Puzzle on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/46BDtl0" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Magnetic Blocks on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/4yaz4BD" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Lego on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3VJk2nR" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Bowling Toy on Amazon
+        </a>
+      </div>
+      <div class="affiliate-link-wrap">
+        <a class="affiliate-link" href="https://amzn.to/3V8mkN9" target="_blank" rel="nofollow sponsored">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View Golf Set on Amazon
+        </a>
+      </div>
+
+      <p style="margin-top:2rem;">I've tried to focus on presents that children will actually enjoy using rather than simply filling the house with more stuff. And because Christmas shopping can quickly become expensive, I always recommend checking the price before buying and comparing a few options. Prices and availability can change, so always check the current Amazon listing before purchasing.</p>
+
+      <h3>One Last Thing…</h3>
+      <p>If you're anything like me, Christmas shopping can start off feeling exciting and somehow turn into: "I've bought 47 things and I have absolutely no idea who they're for." 😂</p>
+      <p>So my biggest piece of advice is to make a list before you start shopping. Write down:</p>
+      <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin:1.5rem 0;">Child's name → Budget → What they need → What they want → What you've bought</p>
+      <p>It sounds ridiculously simple, but it makes such a difference. And if you have twins, I'd definitely keep their lists side-by-side so you can see where you can buy individually and where you can buy something they can share.</p>
+      <p>Because the goal isn't to spend the most money. It's to create a Christmas that feels magical for your children without leaving you wondering how you're going to pay for January.</p>
+      <p>And honestly? That's a Christmas win in my book. 🎄❤️</p>
+
+      <!-- YOU MIGHT ALSO ENJOY -->
+      <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--stone);">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">You might also enjoy</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a onclick="closeArticle('christmas');openArticle('essentials');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> 15 Twin Newborn Essentials You Actually Need
+          </a>
+          <a onclick="closeArticle('christmas');openArticle('backtoschool');return false;" href="#" style="font-family:var(--sans);font-size:0.9rem;color:var(--charcoal);text-decoration:none;display:flex;align-items:center;gap:0.5rem;font-weight:300;">
+            <span style="color:var(--accent);">→</span> Back to School with Twins: The Real, Practical Things That Actually Help
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--stone);font-style:italic;color:var(--warm-gray);font-size:0.88rem;">This post contains Amazon affiliate links. I only recommend products I have personally used or thoroughly researched. As an Amazon Associate I earn a small commission from qualifying purchases, at no extra cost to you.</p>
+    </div>
+  </div>
+</div>
+
 <script>
-  function openArticle(id) {
+  function openArticle(id, updateHash) {
     document.getElementById('article-' + id).classList.add('active');
     document.body.style.overflow = 'hidden';
     window.scrollTo(0,0);
+    if (updateHash !== false) {
+      history.pushState({article: id}, '', '#article-' + id);
+    }
   }
 
-  function closeArticle(id) {
+  function closeArticle(id, updateHash) {
     document.getElementById('article-' + id).classList.remove('active');
     document.body.style.overflow = '';
+    if (updateHash !== false) {
+      history.pushState({}, '', window.location.pathname);
+    }
   }
+
+  function openArticleFromHash() {
+    var hash = window.location.hash;
+    if (hash.indexOf('#article-') === 0) {
+      var id = hash.replace('#article-', '');
+      var el = document.getElementById('article-' + id);
+      if (el) {
+        openArticle(id, false);
+      }
+    }
+  }
+
+  // Open the right article on first load if a direct link was used
+  document.addEventListener('DOMContentLoaded', openArticleFromHash);
+
+  // Handle browser back/forward buttons
+  window.addEventListener('popstate', function() {
+    var hash = window.location.hash;
+    if (hash.indexOf('#article-') === 0) {
+      openArticleFromHash();
+    } else {
+      document.querySelectorAll('.article-overlay.active').forEach(function(el) {
+        el.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+  });
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
@@ -1068,6 +2301,9 @@
         el.classList.remove('active');
         document.body.style.overflow = '';
       });
+      if (window.location.hash.indexOf('#article-') === 0) {
+        history.pushState({}, '', window.location.pathname);
+      }
     }
   });
 </script>
